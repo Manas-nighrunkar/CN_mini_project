@@ -1,5 +1,4 @@
 import socket
-import httplib
 import os
 import mimetypes
 
@@ -35,14 +34,17 @@ class TCP_Server:
             #recieve the data sent by client(1024 bytes)
             data = conn.recv(1024)
             
+            #while recving data it comes in byte format in pythin3 
+            #so it needs to be converted to str before doing operations
+            data_str = data.decode('utf-8')
+            
             #function to handle data response
-            request = self.handle_request(data)
+            request = self.handle_request(data_str)
 
             #send the data back to client
-            conn.sendall(request)
+            response = bytes(request,'utf-8')
+            conn.sendall(response)
             
-            #print("\r\n")
-            conn.sendall("\r\n")
             #close the connection
             conn.close()
 
@@ -51,8 +53,12 @@ class HTTP_Server(TCP_Server):
             'Server': 'Manas_Server',
             'Content-Type': 'text/html',
             }
-    status_code = httplib.responses
-    #{200: 'OK',404: 'NOT FOUND',and all others}
+    #status_code = httplib.responses
+    status_code = {
+            200: 'OK',
+            404: 'NOT FOUND',
+            501: 'Not Implemented'
+            }
     
     #handles tje request GET /index.html HTTP 1.1
     def handle_request(self, data):
@@ -150,7 +156,7 @@ class HTTP_Request():
         self.parse(data)
 
     def parse(self, data):
-        lines = data.split('\r\n')
+        lines = data.split("\r\n")
         
         #we only require firse line
         request_line = lines[0]
@@ -158,9 +164,11 @@ class HTTP_Request():
     
     #parse the first line into words
     def parse_request_line(self, request_line):
-        words = request_line.split(' ')
+        words = str(request_line).split(" ")
+        
         if len(words) < 2:
             return
+        
         self.http_method = words[0]
         self.uri = words[1]
         
