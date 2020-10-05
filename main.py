@@ -1,6 +1,7 @@
 import socket
 import os
 import mimetypes
+import datetime
 
 class TCP_Server:
     def __init__(self, host = '127.0.0.1', port = 8888):
@@ -49,8 +50,13 @@ class TCP_Server:
             conn.close()
 
 class HTTP_Server(TCP_Server):
+    body_length = None
+    now = datetime.datetime.now(datetime.timezone.utc)
     headers = {
+            'Date': now.strftime("%y-%m-%d %H:%M:%S"),
             'Server': 'Manas_Server',
+            #'Content-length': '0',
+            'Connection': 'Close',
             'Content-Type': 'text/html',
             }
     #status_code = httplib.responses
@@ -91,8 +97,8 @@ class HTTP_Server(TCP_Server):
         headers = ""
 
         #print all header such as server name, content-type
-        for h in self.headers:
-            headers += "%s: %s\r\n" % (h, self.headers[h])
+        for h in headers_copy:
+            headers += "%s: %s\r\n" % (h, headers_copy[h])
         return headers
     
     #handles get method
@@ -104,14 +110,18 @@ class HTTP_Server(TCP_Server):
             response_line = self.response_line(200)
 
             content_type = mimetypes.guess_type(filename)[0] or 'text/html'
-            extra_headers = {'Content-Type': content_type}
+            
+            with open(filename) as f:
+                response_body = f.read()
+         
+            body_length = len(response_body)
+            extra_headers = {'Content-Type': content_type,
+                            'Content-length': body_length
+                            }
             
             response_headers = self.response_headers(extra_headers)
 
-            with open(filename) as f:
-                response_body = f.read()
-        
-        #returns not found error if file is not present
+        # returns not found error if file is not present
         else:
             response_line = self.response_line(404)
             response_headers = self.response_headers()
@@ -125,6 +135,34 @@ class HTTP_Server(TCP_Server):
                 blank_line,
                 response_body
                 )
+
+    def handle_HEAD(self, request):
+        filename = request.uri.strip('/')   #remove / from string
+        
+        if os.path.exists(filename):
+            print ('Client has fetched ' + filename)
+            response_line = self.response_line(200)
+
+            content_type = mimetypes.guess_type(filename)[0] or 'text/html'
+            extra_headers = {'Content-Type': content_type}
+            
+            response_headers = self.response_headers(extra_headers)
+
+        
+        #returns not found error if file is not present
+        else:
+            response_line = self.response_line(404)
+            response_headers = self.response_headers()
+            response_body = "<h1> 404 Not Found</h1>"
+
+        blank_line = "\r\n"
+
+        return "%s%s%s" % (
+                response_line,
+                response_headers,
+                blank_line,
+                )
+
 
     #tempoary function for not implemented methods   
     def HTTP_501_handler(self, request):
