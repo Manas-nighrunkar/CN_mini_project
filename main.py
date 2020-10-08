@@ -2,8 +2,12 @@ import socket
 import os
 import mimetypes
 import datetime
+import _thread
+import sys
 
 class TCP_Server:
+    
+    CLIENTS = []
     def __init__(self, host = '127.0.0.1', port = 8888):
         #address for our server
         self.host = host
@@ -22,32 +26,47 @@ class TCP_Server:
         s.listen(100)
 
         print("Server Listening at", s.getsockname())
-
-        #infinite loop till keyboard interrupt
         while True:
-
-            #accept the incoming new connection
-            conn, addr = s.accept()
-
-            #addr is address of client
+            try:
+                conn, addr = s.accept()
+            except:
+                print("\nSTOPPED")
+                sys.exit()
+            self.CLIENTS.append(conn)
             print("connected by", addr)
+            _thread.start_new_thread(self.CLIENT_THREAD, (conn,addr))
 
-            #recieve the data sent by client(1024 bytes)
-            data = conn.recv(1024)
-            
-            #while recving data it comes in byte format in pythin3 
-            #so it needs to be converted to str before doing operations
-            data_str = data.decode('utf-8')
-            
-            #function to handle data response
-            request = self.handle_request(data_str)
 
-            #send the data back to client
-            response = bytes(request,'utf-8')
-            conn.sendall(response)
+    def CLIENT_THREAD(self, conn, addr): 
+        while True:
+            try:
+                data = conn.recv(1024)
             
-            #close the connection
-            conn.close()
+                data_str = data.decode('utf-8')
+            
+                if data_str:
+                    #function to handle data response
+                    request = self.handle_request(data_str)
+                    message = bytes(request,'utf-8')
+                    self.SEND(message, conn)
+                else:
+                    remove(conn)
+            except:
+                break
+
+    def SEND(self, message, conn):
+        for clients in self.CLIENTS:
+            if clients == conn:
+                try: 
+                    conn.sendall(message)
+                    conn.close()
+                except:
+                    clients.close()
+                    self.remove(clients)
+    
+    def remove(self,conn):
+        if conn in CLIENTS:
+            self.CLIENTS.remove(conn)
 
 class HTTP_Server(TCP_Server):
     body_length = None
@@ -55,7 +74,7 @@ class HTTP_Server(TCP_Server):
     headers = {
             'Date': now.strftime("%y-%m-%d %H:%M:%S"),
             'Server': 'Manas_Server',
-            #'Content-length': '0',
+            'Content-length': '-1',
             'Connection': 'Close',
             'Content-Type': 'text/html',
             }
@@ -63,7 +82,8 @@ class HTTP_Server(TCP_Server):
     status_code = {
             200: 'OK',
             404: 'NOT FOUND',
-            501: 'Not Implemented'
+            501: 'Not Implemented',
+            400: 'Bad Request'
             }
     
     #handles tje request GET /index.html HTTP 1.1
@@ -76,7 +96,7 @@ class HTTP_Server(TCP_Server):
             #to check which method is needed
             handler = getattr(self, 'handle_%s' % request.http_method)
         except AttributeError:
-            handler = self.HTTP_501_handler
+            handler = self.HTTP_400_handler
         
         #handler of methods(get, post)
         response = handler(request)
@@ -165,14 +185,14 @@ class HTTP_Server(TCP_Server):
 
 
     #tempoary function for not implemented methods   
-    def HTTP_501_handler(self, request):
-        response_line = self.response_line(status_code = 501)
+    def HTTP_400_handler(self, request):
+        response_line = self.response_line(status_code = 400)
 
         response_headers = self.response_headers()
 
         blank_line = "\r\n"
 
-        response_body = "<h1> ERROR: 501 Not Implemented......Please check the method called</h1>"
+        response_body = "<h1> ERROR: BAD REQUEST </h1>"
         
         return "%s%s%s%s" % (
                 response_line,
