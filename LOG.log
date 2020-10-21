@@ -1,0 +1,45 @@
+INFO 2020-10-21 13:53:02,800 - DELETE -> Client has deleted manas.txt
+INFO 2020-10-21 14:27:44,588 - GET -> Client has fetched index.html
+INFO 2020-10-21 14:27:48,204 - Has Fetched not modified index.html
+INFO 2020-10-21 14:27:49,189 - Has Fetched not modified index.html
+INFO 2020-10-21 14:28:26,634 - GET -> Client has fetched index.html
+INFO 2020-10-21 14:28:36,392 - POST -> Client has accessed index.html and the post info is - 
+INFO 2020-10-21 14:31:00,230 - Has Fetched not modified index.html
+INFO 2020-10-21 14:31:50,721 - GET -> Client has requested for not available file inde.html
+INFO 2020-10-21 14:33:52,858 - Has Fetched not modified index.html
+INFO 2020-10-21 14:33:54,506 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:38,109 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:38,661 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:38,878 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:39,047 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:39,220 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:39,403 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:39,589 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:39,776 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:39,945 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:40,099 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:40,258 - Has Fetched not modified index.html
+INFO 2020-10-21 14:34:40,427 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:25,043 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:25,569 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:25,785 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:25,960 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:26,118 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:26,289 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:26,456 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:26,619 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:26,785 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:26,958 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:27,121 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:27,281 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:27,474 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:27,640 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:27,795 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:27,947 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:28,117 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:28,295 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:28,488 - Has Fetched not modified index.html
+INFO 2020-10-21 14:35:33,994 - Has Fetched not modified index.html
+INFO 2020-10-21 14:36:58,085 - GET -> Client has fetched index.html
+INFO 2020-10-21 14:37:31,632 - Has Fetched not modified index.html
+INFO 2020-10-21 14:37:37,700 - POST -> Client has accessed index.html and the post info is - 
