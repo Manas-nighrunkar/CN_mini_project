@@ -43,3 +43,29 @@ INFO 2020-10-21 14:35:33,994 - Has Fetched not modified index.html
 INFO 2020-10-21 14:36:58,085 - GET -> Client has fetched index.html
 INFO 2020-10-21 14:37:31,632 - Has Fetched not modified index.html
 INFO 2020-10-21 14:37:37,700 - POST -> Client has accessed index.html and the post info is - 
+INFO 2020-10-21 23:30:18,259 - GET -> Client has fetched index.html
+INFO 2020-10-21 23:30:20,082 - GET -> Client has requested for not available file favicon.ico
+INFO 2020-10-21 23:30:24,855 - Has Fetched not modified index.html
+INFO 2020-10-21 23:30:50,746 - Has Fetched not modified index.html
+INFO 2020-10-21 23:34:04,130 - Has Fetched not modified index.html
+INFO 2020-10-21 23:34:29,921 - Has Fetched not modified index.html
+INFO 2020-10-21 23:35:37,440 - Has Fetched not modified index.html
+INFO 2020-10-21 23:35:59,054 - Has Fetched not modified index.html
+INFO 2020-10-21 23:36:09,377 - Has Fetched not modified index.html
+INFO 2020-10-21 23:37:22,078 - Has Fetched not modified index.html
+INFO 2020-10-21 23:39:22,959 - Has Fetched not modified index.html
+INFO 2020-10-21 23:40:57,701 - Has Fetched not modified index.html
+INFO 2020-10-21 23:41:03,643 - Has Fetched not modified index.html
+INFO 2020-10-21 23:43:11,769 - Has Fetched not modified index.html
+INFO 2020-10-22 15:46:09,298 - Has Fetched not modified index.html
+INFO 2020-10-22 15:46:11,520 - GET -> Client has requested for not available file favicon.ico
+INFO 2020-10-22 15:48:23,083 - POST -> Client has accessed index.html and the post info is - 
+INFO 2020-10-22 15:50:52,085 - POST -> Client has accessed index.html and the post info is - 
+INFO 2020-10-22 15:52:54,484 - POST -> Client has accessed index.html and the post info is - 
+INFO 2020-10-22 15:54:15,262 - POST -> Client has accessed index.html and the post info is - fname=manas&lname=nighrunkar
+INFO 2020-10-22 15:56:35,106 - POST -> Client has accessed index.html and the post info is - fname=manas&lname=nighrunkar
+INFO 2020-10-22 15:57:38,047 - PUT -> Client has created and written in manas.txt - hello
+INFO 2020-10-22 15:58:06,701 - DELETE -> Client has deleted manas.txt
+INFO 2020-10-22 15:58:24,368 - HEAD -> Client has fetched index.html
+INFO 2020-10-22 15:59:56,058 - POST -> Client has accessed index.html and the post info is - fname=manas&lname=nighrunkar
+INFO 2020-10-22 16:00:10,126 - PUT -> Client has created and written in manas.txt - fname=manas&lname=nighrunkar

@@ -91,6 +91,7 @@ class HTTP_Server(TCP_Server):
             'Connection': 'Close',
             'Content-Type': 'text/html',
             'Last-Modified': gmttime,
+            'Set-Cookie': 'Cookie_Name'
             }
     #status_code = httplib.responses
     status_code = {
@@ -218,7 +219,8 @@ class HTTP_Server(TCP_Server):
             
         extra_headers = {'Content-Type': content_type,
                         'Content-length': body_length,
-                        'Last-Modified': modificationtime
+                        'Last-Modified': modificationtime,
+                        'Set-Cookie': 'id=a3fWa; Expires=Wed, 21 Oct 2020 18:12:00 GMT',
                         }
             
         response_headers = self.response_headers(extra_headers)
@@ -242,7 +244,7 @@ class HTTP_Server(TCP_Server):
         
         #if requested file is present log the infor and send the file body
         if os.path.exists(filename):
-            post_logger.info('POST -> Client has accessed ' + filename + ' and the post info is - ' + request.post_info)
+            post_logger.info('POST -> Client has accessed ' + filename + ' and the post info is - ' + request.info)
             response_line = self.response_line(200)     
             
             with open(filename,'rb') as f:
@@ -278,14 +280,14 @@ class HTTP_Server(TCP_Server):
             filename = request.uri.strip('/')   #remove / from string
 
         if os.path.exists(filename):
-            put_logger.info('PUT -> Client has written in ' + filename + ' - ' + request.put_info)
+            put_logger.info('PUT -> Client has written in ' + filename + ' - ' + request.info)
             response_line = self.response_line(200)
         else:
-            put_logger.info('PUT -> Client has created and written in ' + filename + ' - ' + request.put_info)
+            put_logger.info('PUT -> Client has created and written in ' + filename + ' - ' + request.info)
             response_line = self.response_line(201)
 
         with open(filename,"w") as f:
-            f.write(request.put_info)
+            f.write(request.info)
 
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'
         with open("success.html",'rb') as f:
@@ -434,10 +436,9 @@ class HTTP_Request():
         self.headers = {}
         self.request_lines = []
         self.dict = {}
-        self.post_info = ""
-        self.put_info = ""
+        self.info = ""
         #parse the data into lines
-        #print(data)
+        print(data)
         self.parse(data)
         #Log file
         LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
@@ -468,6 +469,7 @@ class HTTP_Request():
 
         self.http_method = words[0]
         self.uri = words[1]
+        """
         self.request_lines = request_line
         if(self.http_method == 'GET'):
             self.handle_get_headers(request_line)
@@ -479,6 +481,12 @@ class HTTP_Request():
             self.handle_head_headers(request_line)
         elif(self.http_method == 'DELETE'):
             self.handle_delete_headers(request_line)
+        """
+        if(self.http_method == 'GET' or self.http_method == 'HEAD' or self.http_method == 'DELETE'):
+            self.handle_get_headers(request_line)
+        elif(self.http_method == 'POST' or self.http_method == 'PUT'):
+            self.handle_post_headers(request_line)
+      
 
         
 #################################################################################################################################
@@ -498,46 +506,11 @@ class HTTP_Request():
             i += 1
         i += 1
         while(i != len(request_line)):
-            self.post_info += request_line[i]
+            self.info += request_line[i]
             if i != len(request_line) - 1:
-                self.post_info += "\n"
+                self.info += "\n"
             i += 1
         
-        """"
-        i = 0
-        for i in range (1, len(request_line)-2):
-            word = request_line[i].split(': ')
-            self.dict[word[0]] = word[1]
-
-        self.post_info = request_line[i+2]
-        """
-#################################################################################################################################
-    def handle_put_headers(self, request_line):
-        i = 1
-        while(request_line[i] != ''):
-            word = request_line[i].split(': ')
-            self.dict[word[0]] = word[1]
-            i += 1
-        i += 1
-        while(i != len(request_line)):
-            self.put_info += request_line[i]
-            if i != len(request_line) - 1:
-                self.put_info += "\n"
-            i += 1
-
-#################################################################################################################################
-    def handle_head_headers(self, request_line):
-        for i in range (1, len(request_line)-2):
-            word = request_line[i].split(': ')
-            self.dict[word[0]] = word[1] 
-
-#################################################################################################################################
-    def handle_delete_headers(self, request_line):
-        for i in range (1, len(request_line)-2):
-            word = request_line[i].split(': ')
-            self.dict[word[0]] = word[1] 
-
-
 #################################################################################################################################
 if __name__ == '__main__':
     server = HTTP_Server()
