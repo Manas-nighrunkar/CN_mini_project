@@ -69,3 +69,74 @@ INFO 2020-10-22 15:58:06,701 - DELETE -> Client has deleted manas.txt
 INFO 2020-10-22 15:58:24,368 - HEAD -> Client has fetched index.html
 INFO 2020-10-22 15:59:56,058 - POST -> Client has accessed index.html and the post info is - fname=manas&lname=nighrunkar
 INFO 2020-10-22 16:00:10,126 - PUT -> Client has created and written in manas.txt - fname=manas&lname=nighrunkar
+INFO 2020-10-22 23:03:39,274 - Has Fetched not modified index.html
+INFO 2020-10-22 23:03:43,271 - GET -> Client has fetched index.html
+INFO 2020-10-22 23:04:06,724 - GET -> Client has fetched index.html
+INFO 2020-10-22 23:04:39,283 - GET -> Client has fetched index.html
+INFO 2020-10-22 23:04:45,887 - Has Fetched not modified index.html
+INFO 2020-10-22 23:05:02,631 - Has Fetched not modified index.html
+INFO 2020-10-22 23:07:27,650 - GET -> Client has fetched index.html
+INFO 2020-10-22 23:07:27,657 - GET -> cookie sent: 20569-abcde
+INFO 2020-10-22 23:08:06,588 - GET -> Client has fetched index.html
+INFO 2020-10-22 23:08:06,589 - GET -> cookie sent: 20569-abcde
+INFO 2020-10-22 23:09:25,114 - GET -> Client has fetched index.html
+INFO 2020-10-22 23:09:25,114 - GET -> cookie sent: 20569-abcde
+INFO 2020-10-22 23:10:34,691 - GET -> Client has fetched index.html
+INFO 2020-10-22 23:10:34,692 - GET -> cookie sent: 20569-abcde
+INFO 2020-10-22 23:10:59,779 - GET -> Client has fetched index.html
+INFO 2020-10-22 23:10:59,779 - GET -> cookie sent: 20569-abcde
+INFO 2020-10-22 23:11:51,179 - Has Fetched not modified index.html
+INFO 2020-10-22 23:11:51,179 - GET -> cookie sent: 20569-abcde
+INFO 2020-10-22 23:12:17,621 - Has Fetched not modified index.html
+INFO 2020-10-22 23:12:17,622 - GET -> cookie sent: 20569-abcde
+INFO 2020-10-22 23:12:41,368 - Has Fetched not modified index.html
+INFO 2020-10-22 23:12:41,368 - GET -> cookie sent: 20569-abcde
+INFO 2020-10-22 23:12:47,746 - Has Fetched not modified index.html
+INFO 2020-10-22 23:12:47,747 - GET -> cookie sent: 20569-abcde
+INFO 2020-10-22 23:37:54,728 - GET -> Client has requested for not available file favicon.ico
+INFO 2020-10-22 23:37:54,735 - GET -> cookie sent: 58870-abcde
+INFO 2020-10-22 23:38:16,943 - GET -> Client has fetched index.html
+INFO 2020-10-22 23:38:16,945 - GET -> cookie sent: 58870-abcde
+INFO 2020-10-22 23:38:21,675 - Has Fetched not modified index.html
+INFO 2020-10-22 23:38:21,676 - GET -> cookie sent: 58870-abcde
+INFO 2020-10-26 23:22:21,116 - GET -> Client has fetched Root/index.html
+INFO 2020-10-26 23:22:21,131 - GET -> cookie sent: 55158-abcde
+INFO 2020-10-26 23:22:21,178 - GET -> Client has fetched Root/csi_image.png
+INFO 2020-10-26 23:22:21,225 - GET -> cookie sent: 55158-abcde
+INFO 2020-10-26 23:22:22,002 - GET -> Client has requested for not available file Root/favicon.ico
+INFO 2020-10-26 23:22:22,003 - GET -> cookie sent: 55158-abcde
+INFO 2020-10-26 23:27:49,239 - Has Fetched not modified Root/index.html
+INFO 2020-10-26 23:27:49,247 - GET -> cookie sent: 40330-abcde
+INFO 2020-10-26 23:28:20,955 - GET -> Client has fetched Root
+INFO 2020-10-26 23:28:38,106 - GET -> Client has fetched Root
+INFO 2020-10-26 23:28:46,046 - Has Fetched not modified Root/index.html
+INFO 2020-10-26 23:28:46,060 - GET -> cookie sent: 82846-abcde
+INFO 2020-10-26 23:28:54,047 - GET -> Client has fetched Root/hello.html
+INFO 2020-10-26 23:28:54,047 - GET -> cookie sent: 82846-abcde
+INFO 2020-10-26 23:28:59,720 - Has Fetched not modified Root/hello.html
+INFO 2020-10-26 23:28:59,762 - GET -> cookie sent: 82846-abcde
+INFO 2020-10-26 23:29:06,801 - GET -> Client has fetched Root
+INFO 2020-10-26 23:30:34,185 - GET -> Client has fetched Root
+INFO 2020-10-26 23:30:40,248 - Has Fetched not modified Root/hello.html
+INFO 2020-10-26 23:30:40,261 - GET -> cookie sent: 17595-abcde
+INFO 2020-10-26 23:30:44,581 - GET -> Client has fetched Root
+INFO 2020-10-26 23:31:36,548 - GET -> Client has requested for not available file default.html
+INFO 2020-10-26 23:31:36,551 - GET -> cookie sent: 36914-abcde
+INFO 2020-10-26 23:31:43,418 - GET -> Client has requested for not available file default.html
+INFO 2020-10-26 23:31:43,418 - GET -> cookie sent: 36914-abcde
+INFO 2020-10-26 23:32:13,823 - GET -> Client has requested for not available file /Root/default.html
+INFO 2020-10-26 23:32:13,834 - GET -> cookie sent: 19852-abcde
+INFO 2020-10-26 23:32:14,972 - GET -> Client has requested for not available file /Root/default.html
+INFO 2020-10-26 23:32:14,973 - GET -> cookie sent: 19852-abcde
+INFO 2020-10-26 23:32:18,681 - GET -> Client has requested for not available file /Root/default.html
+INFO 2020-10-26 23:32:18,681 - GET -> cookie sent: 19852-abcde
+INFO 2020-10-26 23:33:04,429 - GET -> Client has fetched Root/default.html
+INFO 2020-10-26 23:33:04,436 - GET -> cookie sent: 80415-abcde
+INFO 2020-10-27 08:53:43,407 - Client has requested for not available file index.html
+INFO 2020-10-27 08:53:43,413 - GET -> cookie sent: 22506-abcde
+INFO 2020-10-27 08:53:55,052 - GET -> Client has fetched Root/index.html
+INFO 2020-10-27 08:53:55,052 - GET -> cookie sent: 22506-abcde
+INFO 2020-10-27 08:53:55,085 - GET -> Client has fetched Root/csi_image.png
+INFO 2020-10-27 08:53:55,086 - GET -> cookie sent: 22506-abcde
+INFO 2020-10-27 08:54:08,606 - GET -> Client has fetched Root/hello.html
+INFO 2020-10-27 08:54:08,607 - GET -> cookie sent: 22506-abcde

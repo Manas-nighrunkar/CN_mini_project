@@ -6,6 +6,8 @@ import _thread
 import sys
 import re
 import logging
+import random
+from configparser import ConfigParser
 
 class TCP_Server:
     
@@ -81,7 +83,8 @@ class TCP_Server:
 
 ################################################################################################################################# 
 class HTTP_Server(TCP_Server):
-    body_length = None
+    random_number = random.randint(10000,99999)
+    #body_length = None
     #current time
     gmttime = time.strftime("%a, %d %b %Y %X GMT", time.gmtime())
     headers = {
@@ -187,12 +190,12 @@ class HTTP_Server(TCP_Server):
                 # returns not found error if file is not present
                 else:
                     response_line = self.response_line(404)
-                    get_logger.info('Client has requested for not available file ' + filename ) 
+                    get_logger.info('GET -> Client has requested for not available file ' + filename ) 
                     response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
             
             #if the file is not modified simply send 304
             else:
-                get_logger.info('Has Fetched not modified ' + filename)
+                get_logger.info('GET -> Has Fetched not modified ' + filename)
                 response_line = self.response_line(304)
                 response_body = ''
 
@@ -215,12 +218,14 @@ class HTTP_Server(TCP_Server):
             
         #to get the content type
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'
-        body_length = len(response_body)   
-            
+        body_length = len(response_body)
+        cookie_value = 'abcde' 
+        cookie = str(self.random_number) + '-' + cookie_value
+        get_logger.info("GET -> cookie sent: " + cookie)  
         extra_headers = {'Content-Type': content_type,
                         'Content-length': body_length,
                         'Last-Modified': modificationtime,
-                        'Set-Cookie': 'id=a3fWa; Expires=Wed, 21 Oct 2020 18:12:00 GMT',
+                        'Set-Cookie': cookie,
                         }
             
         response_headers = self.response_headers(extra_headers)
@@ -371,7 +376,7 @@ class HTTP_Server(TCP_Server):
                     response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
  
             else:
-                head_logger.info('Has Fetched not modified ' + filename)
+                head_logger.info('HEAD -> Has Fetched not modified ' + filename)
                 response_line = self.response_line(304)
                 response_body = ''
             
@@ -438,7 +443,7 @@ class HTTP_Request():
         self.dict = {}
         self.info = ""
         #parse the data into lines
-        print(data)
+        #print(data)
         self.parse(data)
         #Log file
         LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
@@ -469,25 +474,10 @@ class HTTP_Request():
 
         self.http_method = words[0]
         self.uri = words[1]
-        """
-        self.request_lines = request_line
-        if(self.http_method == 'GET'):
-            self.handle_get_headers(request_line)
-        elif(self.http_method == 'POST'):
-            self.handle_post_headers(request_line)
-        elif(self.http_method == 'PUT'):
-            self.handle_put_headers(request_line)
-        elif(self.http_method == 'HEAD'):
-            self.handle_head_headers(request_line)
-        elif(self.http_method == 'DELETE'):
-            self.handle_delete_headers(request_line)
-        """
         if(self.http_method == 'GET' or self.http_method == 'HEAD' or self.http_method == 'DELETE'):
             self.handle_get_headers(request_line)
         elif(self.http_method == 'POST' or self.http_method == 'PUT'):
             self.handle_post_headers(request_line)
-      
-
         
 #################################################################################################################################
     def handle_get_headers(self, request_line):
@@ -513,5 +503,14 @@ class HTTP_Request():
         
 #################################################################################################################################
 if __name__ == '__main__':
+    configur = ConfigParser() 
+    print (configur.read('config.ini')) 
+  
+    print ("Sections : ", configur.sections()) 
+    print ("Installation Library : ", configur.get('installation','library')) 
+    print ("Log Errors debugged ? : ", configur.getboolean('debug','log_errors')) 
+    print ("Port Server : ", configur.getint('server','port')) 
+    print ("Worker Server : ", configur.getint('server','nworkers')) 
+    print("MY root directory:", configur.get('My_Settings','RootDirectory'))
     server = HTTP_Server()
     #server.start()

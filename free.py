@@ -1,3 +1,5 @@
+root = 'manas'
+"""
 def handle_GET(self, request):
         get_logger = logging.getLogger() 
         if(request.uri == ''):
@@ -59,7 +61,7 @@ def handle_GET(self, request):
                 #response_body
                 )
         return headers, response_body
-        --------------------------------------------------------------------------------------------------------------------------------------------
+        #--------------------------------------------------------------------------------------------------------------------------------------------
         head_logger = logging.getLogger()
         if(request.uri == '/'):
             filename = "default.html"
@@ -93,3 +95,4 @@ def handle_GET(self, request):
                 )
         body = ''
         return headers, body
+"""
