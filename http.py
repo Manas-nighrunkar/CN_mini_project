@@ -8,9 +8,11 @@ import re
 import logging
 import random
 from configparser import ConfigParser
+import signal
 
 class TCP_Server:
     
+    server_logger = logging.getLogger() 
     CLIENTS = []
     def __init__(self, host = '127.0.0.1', port = 8888):
         #address for our server
@@ -28,29 +30,31 @@ class TCP_Server:
 
         #start listening for connections on given port
         self.s.listen(100)
+        #self.server_logger.debug("Server Listening at" + str(self.s.getsockname()[0]) + str(self.s.getsockname()[1]))
         print("Server Listening at", self.s.getsockname())
         while True:
             try:
                 conn, addr = self.s.accept()
             except:
-                print("\nSTOPPED")
+                self.server_logger.debug("\nSTOPPED")
                 sys.exit()
 
             self.CLIENTS.append(conn)
+            #self.server_logger.debug("connected by", addr)
             print("connected by", addr)
             _thread.start_new_thread(self.CLIENT_THREAD, (conn,addr))
 
 
-    def CLIENT_THREAD(self, conn, addr): 
+    def CLIENT_THREAD(self, conn, addr):
         while True:
             try:
                 BUFF_SIZE = 4096
                 data = b''
                 while True:
-                    part = conn.recv(BUFF_SIZE)
-                    data += part
-                    if len(part) < BUFF_SIZE:
-                        break
+                        part = conn.recv(BUFF_SIZE)
+                        data += part
+                        if len(part) < BUFF_SIZE:
+                            break
                 data_str = data.decode()
                 if data_str:
                     #function to handle data response
@@ -60,7 +64,7 @@ class TCP_Server:
                 else:
                     self.remove(conn)
             except Exception as e:
-                print(e)
+                self.server_logger.warning(e)
                 break
             
     def SEND(self, message_headers, message_body, conn):
@@ -94,7 +98,6 @@ class HTTP_Server(TCP_Server):
             'Connection': 'Close',
             'Content-Type': 'text/html',
             'Last-Modified': gmttime,
-            'Set-Cookie': 'Cookie_Name'
             }
     #status_code = httplib.responses
     status_code = {
@@ -152,7 +155,7 @@ class HTTP_Server(TCP_Server):
         get_logger = logging.getLogger() 
         if(request.uri == ''):
             filename = ""
-        elif(request.uri == '/'):
+        elif(request.uri == request.root):
             filename = "default.html"
         else:
             url = request.uri.strip('/')   #remove / from string
@@ -219,14 +222,21 @@ class HTTP_Server(TCP_Server):
         #to get the content type
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'
         body_length = len(response_body)
-        cookie_value = 'abcde' 
-        cookie = str(self.random_number) + '-' + cookie_value
-        get_logger.info("GET -> cookie sent: " + cookie)  
-        extra_headers = {'Content-Type': content_type,
-                        'Content-length': body_length,
-                        'Last-Modified': modificationtime,
-                        'Set-Cookie': cookie,
-                        }
+        if 'Cookie' not in request.dict.keys():
+            cookie_value = str(self.random_number)
+            cookie = 'SessionId' + '=' + cookie_value
+            get_logger.info("GET -> cookie sent: " + cookie)  
+            extra_headers = {'Content-Type': content_type,
+                            'Content-length': body_length,
+                            'Last-Modified': modificationtime,
+                            'Set-Cookie': cookie,
+                            }
+        else:
+            extra_headers = {'Content-Type': content_type,
+                            'Content-length': body_length,
+                            'Last-Modified': modificationtime,
+                            }
+
             
         response_headers = self.response_headers(extra_headers)
 
@@ -242,14 +252,14 @@ class HTTP_Server(TCP_Server):
     def handle_POST(self, request):
         #print(request.dict)
         post_logger = logging.getLogger()
-        if(request.uri == '/'):
+        if(request.uri == request.root):
             filename = "default.html"
         else:
             filename = request.uri.strip('/')   #remove / from string
         
         #if requested file is present log the infor and send the file body
         if os.path.exists(filename):
-            post_logger.info('POST -> Client has accessed ' + filename + ' and the post info is - ' + request.info)
+            post_logger.info('POST -> Client has accessed ' + filename + ' and the post info is - ' + '\n' + request.info)
             response_line = self.response_line(200)     
             
             with open(filename,'rb') as f:
@@ -262,9 +272,19 @@ class HTTP_Server(TCP_Server):
         
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'
         body_length = len(response_body)
-        extra_headers = {'Content-Type': content_type,
-                         'Content-length': body_length
-                        }
+        if 'Cookie' not in request.dict.keys():
+            cookie_value = str(self.random_number)
+            cookie = 'SessionId' + '=' + cookie_value
+            post_logger.info("POST -> cookie sent: " + cookie)
+            extra_headers = {'Content-Type': content_type,
+                             'Content-length': body_length,
+                            'Set-Cookie': cookie,
+                            }
+        else:
+            extra_headers = {'Content-Type': content_type,
+                             'Content-length': body_length,
+                            }
+
         response_headers = self.response_headers(extra_headers)
         blank_line = "\r\n"
         headers =  "%s%s%s" % (
@@ -279,16 +299,15 @@ class HTTP_Server(TCP_Server):
     def handle_PUT(self, request):
         #print(request.dict)
         put_logger = logging.getLogger()
-        if(request.uri == '/'):
-            filename = "default.html"
-        else:
+        if(request.uri):
             filename = request.uri.strip('/')   #remove / from string
-
+        else:
+            filename = ""
         if os.path.exists(filename):
-            put_logger.info('PUT -> Client has written in ' + filename + ' - ' + request.info)
+            put_logger.info('PUT -> Client has written in ' + filename + ' - ' + '\n' + request.info)
             response_line = self.response_line(200)
         else:
-            put_logger.info('PUT -> Client has created and written in ' + filename + ' - ' + request.info)
+            put_logger.info('PUT -> Client has created and written in ' + filename + ' - ' + '\n' + request.info)
             response_line = self.response_line(201)
 
         with open(filename,"w") as f:
@@ -299,9 +318,20 @@ class HTTP_Server(TCP_Server):
             response_body = f.read()
          
         body_length = len(response_body)
-        extra_headers = {'Content-Type': content_type,
-                        'Content-length': body_length
-                        }
+        if 'Cookie' not in request.dict.keys():
+            cookie_value = str(self.random_number)
+            cookie = 'SessionId' + '=' + cookie_value
+            put_logger.info("PUT -> cookie sent: " + cookie)
+            extra_headers = {'Content-Type': content_type,
+                            'Content-length': body_length,
+                            'Set-Cookie': cookie,
+                            }
+
+        else:
+            extra_headers = {'Content-Type': content_type,
+                            'Content-length': body_length,
+                            }
+
         response_headers = self.response_headers(extra_headers)
 
         blank_line = "\r\n"
@@ -315,11 +345,11 @@ class HTTP_Server(TCP_Server):
 #################################################################################################################################
     def handle_DELETE(self, request):
         delete_logger = logging.getLogger()
-        if(request.uri == '/'):
-            filename = "default.html"
-        else:
+        if(request.uri):
             filename = request.uri.strip('/')   #remove / from string
-
+        else:
+            filename = ""
+        
         if os.path.exists(filename):
             delete_logger.info('DELETE -> Client has deleted ' + filename)
             response_line = self.response_line(200)
@@ -334,9 +364,19 @@ class HTTP_Server(TCP_Server):
 
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'
         body_length = len(response_body)
-        extra_headers = {'Content-Type': content_type,
-                         'Content-length': body_length
-                        }
+        if 'Cookie' not in request.dict.keys():
+            cookie_value = str(self.random_number)
+            cookie = 'SessionId' + '=' + cookie_value
+            delete_logger.info("DELETE -> cookie sent: " + cookie)
+            extra_headers = {'Content-Type': content_type,
+                             'Content-length': body_length,
+                            'Set-Cookie': cookie,
+                            }
+        else:
+            extra_headers = {'Content-Type': content_type,
+                             'Content-length': body_length,
+                            }
+
         response_headers = self.response_headers(extra_headers)
 
         blank_line = "\r\n"
@@ -353,7 +393,7 @@ class HTTP_Server(TCP_Server):
         head_logger = logging.getLogger() 
         if(request.uri == ''):
             filename = ""
-        elif(request.uri == '/'):
+        elif(request.uri == request.root):
             filename = "default.html"
         else:
             filename = request.uri.strip('/')   #remove / from string
@@ -395,10 +435,18 @@ class HTTP_Server(TCP_Server):
 
         #to get the content type
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'   
-            
-        extra_headers = {'Content-Type': content_type,
-                        'Last-Modified': modificationtime
-                        }
+        if 'Cookie' not in request.dict.keys():
+            cookie_value = str(self.random_number)
+            cookie = 'SessionId' + '=' + cookie_value
+            head_logger.info("HEAD -> cookie sent: " + cookie)
+            extra_headers = {'Content-Type': content_type,
+                            'Last-Modified': modificationtime,
+                            'Set-Cookie': cookie,
+                            }
+        else:
+            extra_headers = {'Content-Type': content_type,
+                            'Last-Modified': modificationtime,
+                            }
             
         response_headers = self.response_headers(extra_headers)
         response_body = ''
@@ -442,12 +490,16 @@ class HTTP_Request():
         self.request_lines = []
         self.dict = {}
         self.info = ""
+        configur = ConfigParser() 
+        configur.read('config.ini')
+        self.root = configur.get('My_Settings','RootDirectory')
+        self.log_file_name = configur.get('My_Settings','LogFileName')
         #parse the data into lines
         #print(data)
         self.parse(data)
         #Log file
         LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
-        logging.basicConfig(filename = "LOG.log",
+        logging.basicConfig(filename = self.log_file_name,
                             level = logging.DEBUG,
                             format = LOG_FORMAT)
         
@@ -474,6 +526,8 @@ class HTTP_Request():
 
         self.http_method = words[0]
         self.uri = words[1]
+        self.uri = self.root + self.uri
+        print(self.uri)
         if(self.http_method == 'GET' or self.http_method == 'HEAD' or self.http_method == 'DELETE'):
             self.handle_get_headers(request_line)
         elif(self.http_method == 'POST' or self.http_method == 'PUT'):
@@ -503,14 +557,5 @@ class HTTP_Request():
         
 #################################################################################################################################
 if __name__ == '__main__':
-    configur = ConfigParser() 
-    print (configur.read('config.ini')) 
-  
-    print ("Sections : ", configur.sections()) 
-    print ("Installation Library : ", configur.get('installation','library')) 
-    print ("Log Errors debugged ? : ", configur.getboolean('debug','log_errors')) 
-    print ("Port Server : ", configur.getint('server','port')) 
-    print ("Worker Server : ", configur.getint('server','nworkers')) 
-    print("MY root directory:", configur.get('My_Settings','RootDirectory'))
     server = HTTP_Server()
     #server.start()

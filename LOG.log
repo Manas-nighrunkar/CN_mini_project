@@ -1,142 +1,106 @@
-INFO 2020-10-21 13:53:02,800 - DELETE -> Client has deleted manas.txt
-INFO 2020-10-21 14:27:44,588 - GET -> Client has fetched index.html
-INFO 2020-10-21 14:27:48,204 - Has Fetched not modified index.html
-INFO 2020-10-21 14:27:49,189 - Has Fetched not modified index.html
-INFO 2020-10-21 14:28:26,634 - GET -> Client has fetched index.html
-INFO 2020-10-21 14:28:36,392 - POST -> Client has accessed index.html and the post info is - 
-INFO 2020-10-21 14:31:00,230 - Has Fetched not modified index.html
-INFO 2020-10-21 14:31:50,721 - GET -> Client has requested for not available file inde.html
-INFO 2020-10-21 14:33:52,858 - Has Fetched not modified index.html
-INFO 2020-10-21 14:33:54,506 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:38,109 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:38,661 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:38,878 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:39,047 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:39,220 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:39,403 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:39,589 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:39,776 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:39,945 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:40,099 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:40,258 - Has Fetched not modified index.html
-INFO 2020-10-21 14:34:40,427 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:25,043 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:25,569 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:25,785 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:25,960 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:26,118 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:26,289 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:26,456 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:26,619 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:26,785 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:26,958 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:27,121 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:27,281 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:27,474 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:27,640 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:27,795 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:27,947 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:28,117 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:28,295 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:28,488 - Has Fetched not modified index.html
-INFO 2020-10-21 14:35:33,994 - Has Fetched not modified index.html
-INFO 2020-10-21 14:36:58,085 - GET -> Client has fetched index.html
-INFO 2020-10-21 14:37:31,632 - Has Fetched not modified index.html
-INFO 2020-10-21 14:37:37,700 - POST -> Client has accessed index.html and the post info is - 
-INFO 2020-10-21 23:30:18,259 - GET -> Client has fetched index.html
-INFO 2020-10-21 23:30:20,082 - GET -> Client has requested for not available file favicon.ico
-INFO 2020-10-21 23:30:24,855 - Has Fetched not modified index.html
-INFO 2020-10-21 23:30:50,746 - Has Fetched not modified index.html
-INFO 2020-10-21 23:34:04,130 - Has Fetched not modified index.html
-INFO 2020-10-21 23:34:29,921 - Has Fetched not modified index.html
-INFO 2020-10-21 23:35:37,440 - Has Fetched not modified index.html
-INFO 2020-10-21 23:35:59,054 - Has Fetched not modified index.html
-INFO 2020-10-21 23:36:09,377 - Has Fetched not modified index.html
-INFO 2020-10-21 23:37:22,078 - Has Fetched not modified index.html
-INFO 2020-10-21 23:39:22,959 - Has Fetched not modified index.html
-INFO 2020-10-21 23:40:57,701 - Has Fetched not modified index.html
-INFO 2020-10-21 23:41:03,643 - Has Fetched not modified index.html
-INFO 2020-10-21 23:43:11,769 - Has Fetched not modified index.html
-INFO 2020-10-22 15:46:09,298 - Has Fetched not modified index.html
-INFO 2020-10-22 15:46:11,520 - GET -> Client has requested for not available file favicon.ico
-INFO 2020-10-22 15:48:23,083 - POST -> Client has accessed index.html and the post info is - 
-INFO 2020-10-22 15:50:52,085 - POST -> Client has accessed index.html and the post info is - 
-INFO 2020-10-22 15:52:54,484 - POST -> Client has accessed index.html and the post info is - 
-INFO 2020-10-22 15:54:15,262 - POST -> Client has accessed index.html and the post info is - fname=manas&lname=nighrunkar
-INFO 2020-10-22 15:56:35,106 - POST -> Client has accessed index.html and the post info is - fname=manas&lname=nighrunkar
-INFO 2020-10-22 15:57:38,047 - PUT -> Client has created and written in manas.txt - hello
-INFO 2020-10-22 15:58:06,701 - DELETE -> Client has deleted manas.txt
-INFO 2020-10-22 15:58:24,368 - HEAD -> Client has fetched index.html
-INFO 2020-10-22 15:59:56,058 - POST -> Client has accessed index.html and the post info is - fname=manas&lname=nighrunkar
-INFO 2020-10-22 16:00:10,126 - PUT -> Client has created and written in manas.txt - fname=manas&lname=nighrunkar
-INFO 2020-10-22 23:03:39,274 - Has Fetched not modified index.html
-INFO 2020-10-22 23:03:43,271 - GET -> Client has fetched index.html
-INFO 2020-10-22 23:04:06,724 - GET -> Client has fetched index.html
-INFO 2020-10-22 23:04:39,283 - GET -> Client has fetched index.html
-INFO 2020-10-22 23:04:45,887 - Has Fetched not modified index.html
-INFO 2020-10-22 23:05:02,631 - Has Fetched not modified index.html
-INFO 2020-10-22 23:07:27,650 - GET -> Client has fetched index.html
-INFO 2020-10-22 23:07:27,657 - GET -> cookie sent: 20569-abcde
-INFO 2020-10-22 23:08:06,588 - GET -> Client has fetched index.html
-INFO 2020-10-22 23:08:06,589 - GET -> cookie sent: 20569-abcde
-INFO 2020-10-22 23:09:25,114 - GET -> Client has fetched index.html
-INFO 2020-10-22 23:09:25,114 - GET -> cookie sent: 20569-abcde
-INFO 2020-10-22 23:10:34,691 - GET -> Client has fetched index.html
-INFO 2020-10-22 23:10:34,692 - GET -> cookie sent: 20569-abcde
-INFO 2020-10-22 23:10:59,779 - GET -> Client has fetched index.html
-INFO 2020-10-22 23:10:59,779 - GET -> cookie sent: 20569-abcde
-INFO 2020-10-22 23:11:51,179 - Has Fetched not modified index.html
-INFO 2020-10-22 23:11:51,179 - GET -> cookie sent: 20569-abcde
-INFO 2020-10-22 23:12:17,621 - Has Fetched not modified index.html
-INFO 2020-10-22 23:12:17,622 - GET -> cookie sent: 20569-abcde
-INFO 2020-10-22 23:12:41,368 - Has Fetched not modified index.html
-INFO 2020-10-22 23:12:41,368 - GET -> cookie sent: 20569-abcde
-INFO 2020-10-22 23:12:47,746 - Has Fetched not modified index.html
-INFO 2020-10-22 23:12:47,747 - GET -> cookie sent: 20569-abcde
-INFO 2020-10-22 23:37:54,728 - GET -> Client has requested for not available file favicon.ico
-INFO 2020-10-22 23:37:54,735 - GET -> cookie sent: 58870-abcde
-INFO 2020-10-22 23:38:16,943 - GET -> Client has fetched index.html
-INFO 2020-10-22 23:38:16,945 - GET -> cookie sent: 58870-abcde
-INFO 2020-10-22 23:38:21,675 - Has Fetched not modified index.html
-INFO 2020-10-22 23:38:21,676 - GET -> cookie sent: 58870-abcde
-INFO 2020-10-26 23:22:21,116 - GET -> Client has fetched Root/index.html
-INFO 2020-10-26 23:22:21,131 - GET -> cookie sent: 55158-abcde
-INFO 2020-10-26 23:22:21,178 - GET -> Client has fetched Root/csi_image.png
-INFO 2020-10-26 23:22:21,225 - GET -> cookie sent: 55158-abcde
-INFO 2020-10-26 23:22:22,002 - GET -> Client has requested for not available file Root/favicon.ico
-INFO 2020-10-26 23:22:22,003 - GET -> cookie sent: 55158-abcde
-INFO 2020-10-26 23:27:49,239 - Has Fetched not modified Root/index.html
-INFO 2020-10-26 23:27:49,247 - GET -> cookie sent: 40330-abcde
-INFO 2020-10-26 23:28:20,955 - GET -> Client has fetched Root
-INFO 2020-10-26 23:28:38,106 - GET -> Client has fetched Root
-INFO 2020-10-26 23:28:46,046 - Has Fetched not modified Root/index.html
-INFO 2020-10-26 23:28:46,060 - GET -> cookie sent: 82846-abcde
-INFO 2020-10-26 23:28:54,047 - GET -> Client has fetched Root/hello.html
-INFO 2020-10-26 23:28:54,047 - GET -> cookie sent: 82846-abcde
-INFO 2020-10-26 23:28:59,720 - Has Fetched not modified Root/hello.html
-INFO 2020-10-26 23:28:59,762 - GET -> cookie sent: 82846-abcde
-INFO 2020-10-26 23:29:06,801 - GET -> Client has fetched Root
-INFO 2020-10-26 23:30:34,185 - GET -> Client has fetched Root
-INFO 2020-10-26 23:30:40,248 - Has Fetched not modified Root/hello.html
-INFO 2020-10-26 23:30:40,261 - GET -> cookie sent: 17595-abcde
-INFO 2020-10-26 23:30:44,581 - GET -> Client has fetched Root
-INFO 2020-10-26 23:31:36,548 - GET -> Client has requested for not available file default.html
-INFO 2020-10-26 23:31:36,551 - GET -> cookie sent: 36914-abcde
-INFO 2020-10-26 23:31:43,418 - GET -> Client has requested for not available file default.html
-INFO 2020-10-26 23:31:43,418 - GET -> cookie sent: 36914-abcde
-INFO 2020-10-26 23:32:13,823 - GET -> Client has requested for not available file /Root/default.html
-INFO 2020-10-26 23:32:13,834 - GET -> cookie sent: 19852-abcde
-INFO 2020-10-26 23:32:14,972 - GET -> Client has requested for not available file /Root/default.html
-INFO 2020-10-26 23:32:14,973 - GET -> cookie sent: 19852-abcde
-INFO 2020-10-26 23:32:18,681 - GET -> Client has requested for not available file /Root/default.html
-INFO 2020-10-26 23:32:18,681 - GET -> cookie sent: 19852-abcde
-INFO 2020-10-26 23:33:04,429 - GET -> Client has fetched Root/default.html
-INFO 2020-10-26 23:33:04,436 - GET -> cookie sent: 80415-abcde
-INFO 2020-10-27 08:53:43,407 - Client has requested for not available file index.html
-INFO 2020-10-27 08:53:43,413 - GET -> cookie sent: 22506-abcde
-INFO 2020-10-27 08:53:55,052 - GET -> Client has fetched Root/index.html
-INFO 2020-10-27 08:53:55,052 - GET -> cookie sent: 22506-abcde
-INFO 2020-10-27 08:53:55,085 - GET -> Client has fetched Root/csi_image.png
-INFO 2020-10-27 08:53:55,086 - GET -> cookie sent: 22506-abcde
-INFO 2020-10-27 08:54:08,606 - GET -> Client has fetched Root/hello.html
-INFO 2020-10-27 08:54:08,607 - GET -> cookie sent: 22506-abcde
+INFO 2020-11-02 22:32:30,944 - GET -> Has Fetched not modified index.html
+INFO 2020-11-02 22:33:14,447 - GET -> Has Fetched not modified index.html
+INFO 2020-11-02 22:33:59,300 - GET -> Has Fetched not modified index.html
+INFO 2020-11-02 22:33:59,301 - GET -> cookie sent: SessionId=17085
+INFO 2020-11-02 22:34:13,612 - GET -> Has Fetched not modified index.html
+INFO 2020-11-02 22:44:40,140 - PUT -> Client has created and written in new.txt - Link to project: https://github.com/atharvajoshi27/The-BookSmith
+
+Team Members:
+111803142 :- Atharva Mukund Joshi
+111803144 :- Manas Manoj Nighrunkar
+INFO 2020-11-02 23:25:47,890 - PUT -> Client has written in new.txt - 
+Link to project: https://github.com/atharvajoshi27/The-BookSmith
+
+Team Members:
+111803142 :- Atharva Mukund Joshi
+111803144 :- Manas Manoj Nighrunkar
+INFO 2020-11-02 23:25:47,894 - PUT -> cookie sent: SessionId=92364
+INFO 2020-11-02 23:26:10,333 - PUT -> Client has written in new.txt - 
+Link to project: https://github.com/atharvajoshi27/The-BookSmith
+
+Team Members:
+111803142 :- Atharva Mukund Joshi
+111803144 :- Manas Manoj Nighrunkar
+INFO 2020-11-02 23:26:31,451 - GET -> Client has fetched new.txt
+INFO 2020-11-02 23:27:02,057 - GET -> Client has fetched index.html
+INFO 2020-11-02 23:27:50,543 - GET -> Client has fetched index.html
+INFO 2020-11-02 23:27:50,544 - GET -> cookie sent: SessionId=92364
+INFO 2020-11-02 23:28:24,066 - GET -> Has Fetched not modified index.html
+INFO 2020-11-02 23:28:57,977 - GET -> Has Fetched not modified index.html
+INFO 2020-11-02 23:28:57,977 - GET -> cookie sent: SessionId=92364
+INFO 2020-11-02 23:29:19,878 - GET -> Has Fetched not modified index.html
+INFO 2020-11-03 18:09:47,716 - GET -> Client has requested for not available file favicon.ico
+INFO 2020-11-03 18:09:47,724 - GET -> cookie sent: SessionId=21355
+WARNING 2020-11-03 18:09:47,724 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 18:10:37,673 - 
+STOPPED
+INFO 2020-11-03 18:13:54,588 - GET -> Has Fetched not modified index.html
+WARNING 2020-11-03 18:13:54,599 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 18:14:01,467 - 
+STOPPED
+INFO 2020-11-03 18:18:20,762 - GET -> Has Fetched not modified index.html
+WARNING 2020-11-03 18:18:20,765 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 18:18:48,719 - STOPPED
+INFO 2020-11-03 18:18:51,599 - GET -> Has Fetched not modified index.html
+WARNING 2020-11-03 18:18:51,609 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 18:19:53,417 - STOPPED
+INFO 2020-11-03 18:20:43,547 - GET -> Has Fetched not modified index.html
+WARNING 2020-11-03 18:20:43,551 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 18:22:13,849 - 
+STOPPED
+INFO 2020-11-03 18:22:52,884 - GET -> Has Fetched not modified index.html
+WARNING 2020-11-03 18:22:52,898 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 18:23:23,330 - 
+STOPPED
+INFO 2020-11-03 18:30:52,921 - GET -> Has Fetched not modified index.html
+WARNING 2020-11-03 18:30:52,925 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 18:31:31,036 - 
+STOPPED
+INFO 2020-11-03 18:33:23,981 - GET -> Has Fetched not modified index.html
+WARNING 2020-11-03 18:33:23,990 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 18:34:17,514 - 
+STOPPED
+INFO 2020-11-03 18:34:29,053 - GET -> Has Fetched not modified index.html
+WARNING 2020-11-03 18:34:29,056 - [Errno 9] Bad file descriptor
+INFO 2020-11-03 18:34:30,364 - GET -> Has Fetched not modified index.html
+WARNING 2020-11-03 18:34:30,364 - [Errno 9] Bad file descriptor
+INFO 2020-11-03 18:35:33,248 - GET -> Has Fetched not modified index.html
+WARNING 2020-11-03 18:35:33,248 - [Errno 9] Bad file descriptor
+INFO 2020-11-03 18:35:38,946 - GET -> Client has fetched default.html
+WARNING 2020-11-03 18:35:38,947 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 18:38:37,942 - 
+STOPPED
+INFO 2020-11-03 18:38:40,435 - GET -> Has Fetched not modified default.html
+WARNING 2020-11-03 18:38:40,443 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 18:39:33,775 - 
+STOPPED
+WARNING 2020-11-03 18:41:22,630 - local variable 'filename' referenced before assignment
+DEBUG 2020-11-03 18:43:40,989 - 
+STOPPED
+INFO 2020-11-03 18:45:08,940 - GET -> Client has fetched Root/index.html
+WARNING 2020-11-03 18:45:08,949 - [Errno 9] Bad file descriptor
+INFO 2020-11-03 18:45:12,615 - GET -> Has Fetched not modified Root/index.html
+WARNING 2020-11-03 18:45:12,616 - [Errno 9] Bad file descriptor
+INFO 2020-11-03 18:46:06,564 - GET -> Client has requested for not available file Root/index.html
+WARNING 2020-11-03 18:46:06,564 - [Errno 9] Bad file descriptor
+INFO 2020-11-03 18:46:24,078 - GET -> Client has fetched Root1/index.html
+WARNING 2020-11-03 18:46:24,080 - [Errno 9] Bad file descriptor
+INFO 2020-11-03 18:46:28,689 - GET -> Client has fetched Root2/index.html
+WARNING 2020-11-03 18:46:28,690 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 19:12:49,142 - 
+STOPPED
+INFO 2020-11-03 19:12:53,698 - GET -> Has Fetched not modified Root2/index.html
+WARNING 2020-11-03 19:12:53,708 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 19:16:55,200 - 
+STOPPED
+INFO 2020-11-03 19:17:00,594 - GET -> Has Fetched not modified Root2/index.html
+WARNING 2020-11-03 19:17:00,603 - [Errno 9] Bad file descriptor
+INFO 2020-11-03 19:17:40,378 - GET -> Has Fetched not modified Root2/hello.html
+INFO 2020-11-03 19:17:40,378 - GET -> cookie sent: SessionId=73458
+WARNING 2020-11-03 19:17:40,379 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 19:19:07,721 - 
+STOPPED
+INFO 2020-11-03 19:19:10,516 - GET -> Has Fetched not modified Root2/hello.html
+WARNING 2020-11-03 19:19:10,529 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-03 19:20:14,081 - 
+STOPPED
