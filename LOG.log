@@ -1,106 +1,164 @@
-INFO 2020-11-02 22:32:30,944 - GET -> Has Fetched not modified index.html
-INFO 2020-11-02 22:33:14,447 - GET -> Has Fetched not modified index.html
-INFO 2020-11-02 22:33:59,300 - GET -> Has Fetched not modified index.html
-INFO 2020-11-02 22:33:59,301 - GET -> cookie sent: SessionId=17085
-INFO 2020-11-02 22:34:13,612 - GET -> Has Fetched not modified index.html
-INFO 2020-11-02 22:44:40,140 - PUT -> Client has created and written in new.txt - Link to project: https://github.com/atharvajoshi27/The-BookSmith
-
-Team Members:
-111803142 :- Atharva Mukund Joshi
-111803144 :- Manas Manoj Nighrunkar
-INFO 2020-11-02 23:25:47,890 - PUT -> Client has written in new.txt - 
-Link to project: https://github.com/atharvajoshi27/The-BookSmith
-
-Team Members:
-111803142 :- Atharva Mukund Joshi
-111803144 :- Manas Manoj Nighrunkar
-INFO 2020-11-02 23:25:47,894 - PUT -> cookie sent: SessionId=92364
-INFO 2020-11-02 23:26:10,333 - PUT -> Client has written in new.txt - 
-Link to project: https://github.com/atharvajoshi27/The-BookSmith
-
-Team Members:
-111803142 :- Atharva Mukund Joshi
-111803144 :- Manas Manoj Nighrunkar
-INFO 2020-11-02 23:26:31,451 - GET -> Client has fetched new.txt
-INFO 2020-11-02 23:27:02,057 - GET -> Client has fetched index.html
-INFO 2020-11-02 23:27:50,543 - GET -> Client has fetched index.html
-INFO 2020-11-02 23:27:50,544 - GET -> cookie sent: SessionId=92364
-INFO 2020-11-02 23:28:24,066 - GET -> Has Fetched not modified index.html
-INFO 2020-11-02 23:28:57,977 - GET -> Has Fetched not modified index.html
-INFO 2020-11-02 23:28:57,977 - GET -> cookie sent: SessionId=92364
-INFO 2020-11-02 23:29:19,878 - GET -> Has Fetched not modified index.html
-INFO 2020-11-03 18:09:47,716 - GET -> Client has requested for not available file favicon.ico
-INFO 2020-11-03 18:09:47,724 - GET -> cookie sent: SessionId=21355
-WARNING 2020-11-03 18:09:47,724 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 18:10:37,673 - 
+DEBUG 2020-11-03 20:03:19,944 - 
 STOPPED
-INFO 2020-11-03 18:13:54,588 - GET -> Has Fetched not modified index.html
-WARNING 2020-11-03 18:13:54,599 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 18:14:01,467 - 
+INFO 2020-11-04 19:36:15,109 - GET -> Client has fetched Root2/index.html
+INFO 2020-11-04 19:36:15,189 - GET -> cookie sent: SessionId=95310
+WARNING 2020-11-04 19:36:15,190 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 19:36:15,389 - GET -> Client has fetched Root2/csi_image.png
+WARNING 2020-11-04 19:36:15,450 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 19:36:15,478 - GET -> Client has requested for not available file Root2/favicon.ico
+WARNING 2020-11-04 19:36:15,480 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 19:36:24,750 - GET -> Has Fetched not modified Root2/index.html
+WARNING 2020-11-04 19:36:24,751 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 19:37:36,883 - GET -> Client has fetched Root2/hello.html
+WARNING 2020-11-04 19:37:36,883 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 19:40:52,170 - GET -> Has Fetched not modified Root2/index.html
+INFO 2020-11-04 19:40:52,171 - GET -> cookie sent: SessionId=95310
+WARNING 2020-11-04 19:40:52,172 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 19:40:52,257 - GET -> Has Fetched not modified Root2/csi_image.png
+WARNING 2020-11-04 19:40:52,259 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 19:40:56,270 - GET -> Has Fetched not modified Root2/index.html
+WARNING 2020-11-04 19:40:56,271 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 19:49:49,204 - 
 STOPPED
-INFO 2020-11-03 18:18:20,762 - GET -> Has Fetched not modified index.html
-WARNING 2020-11-03 18:18:20,765 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 18:18:48,719 - STOPPED
-INFO 2020-11-03 18:18:51,599 - GET -> Has Fetched not modified index.html
-WARNING 2020-11-03 18:18:51,609 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 18:19:53,417 - STOPPED
-INFO 2020-11-03 18:20:43,547 - GET -> Has Fetched not modified index.html
-WARNING 2020-11-03 18:20:43,551 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 18:22:13,849 - 
+INFO 2020-11-04 19:54:09,822 - GET -> Client has fetched Root1/index.html
+WARNING 2020-11-04 19:54:09,839 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 19:55:02,403 - 
 STOPPED
-INFO 2020-11-03 18:22:52,884 - GET -> Has Fetched not modified index.html
-WARNING 2020-11-03 18:22:52,898 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 18:23:23,330 - 
+INFO 2020-11-04 19:55:06,004 - GET -> Has Fetched not modified Root1/index.html
+WARNING 2020-11-04 19:55:06,005 - name 'path' is not defined
+DEBUG 2020-11-04 19:55:37,761 - 
 STOPPED
-INFO 2020-11-03 18:30:52,921 - GET -> Has Fetched not modified index.html
-WARNING 2020-11-03 18:30:52,925 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 18:31:31,036 - 
+INFO 2020-11-04 19:55:39,281 - GET -> Has Fetched not modified Root1/index.html
+WARNING 2020-11-04 19:55:39,285 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 19:57:04,308 - GET -> Has Fetched not modified Root1/index.html
+WARNING 2020-11-04 19:57:04,309 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 19:57:19,911 - 
 STOPPED
-INFO 2020-11-03 18:33:23,981 - GET -> Has Fetched not modified index.html
-WARNING 2020-11-03 18:33:23,990 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 18:34:17,514 - 
+INFO 2020-11-04 19:57:23,354 - GET -> Has Fetched not modified Root1/index.html
+WARNING 2020-11-04 19:57:23,361 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 19:58:02,655 - 
 STOPPED
-INFO 2020-11-03 18:34:29,053 - GET -> Has Fetched not modified index.html
-WARNING 2020-11-03 18:34:29,056 - [Errno 9] Bad file descriptor
-INFO 2020-11-03 18:34:30,364 - GET -> Has Fetched not modified index.html
-WARNING 2020-11-03 18:34:30,364 - [Errno 9] Bad file descriptor
-INFO 2020-11-03 18:35:33,248 - GET -> Has Fetched not modified index.html
-WARNING 2020-11-03 18:35:33,248 - [Errno 9] Bad file descriptor
-INFO 2020-11-03 18:35:38,946 - GET -> Client has fetched default.html
-WARNING 2020-11-03 18:35:38,947 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 18:38:37,942 - 
+INFO 2020-11-04 19:58:05,267 - GET -> Has Fetched not modified Root1/index.html
+WARNING 2020-11-04 19:58:05,279 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 19:58:18,583 - 
 STOPPED
-INFO 2020-11-03 18:38:40,435 - GET -> Has Fetched not modified default.html
-WARNING 2020-11-03 18:38:40,443 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 18:39:33,775 - 
+INFO 2020-11-04 19:58:20,520 - GET -> Has Fetched not modified Root1/index.html
+WARNING 2020-11-04 19:58:20,524 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 19:58:43,300 - 
 STOPPED
-WARNING 2020-11-03 18:41:22,630 - local variable 'filename' referenced before assignment
-DEBUG 2020-11-03 18:43:40,989 - 
+INFO 2020-11-04 19:58:46,373 - GET -> Has Fetched not modified Root1/index.html
+WARNING 2020-11-04 19:58:46,388 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 20:01:52,439 - 
 STOPPED
-INFO 2020-11-03 18:45:08,940 - GET -> Client has fetched Root/index.html
-WARNING 2020-11-03 18:45:08,949 - [Errno 9] Bad file descriptor
-INFO 2020-11-03 18:45:12,615 - GET -> Has Fetched not modified Root/index.html
-WARNING 2020-11-03 18:45:12,616 - [Errno 9] Bad file descriptor
-INFO 2020-11-03 18:46:06,564 - GET -> Client has requested for not available file Root/index.html
-WARNING 2020-11-03 18:46:06,564 - [Errno 9] Bad file descriptor
-INFO 2020-11-03 18:46:24,078 - GET -> Client has fetched Root1/index.html
-WARNING 2020-11-03 18:46:24,080 - [Errno 9] Bad file descriptor
-INFO 2020-11-03 18:46:28,689 - GET -> Client has fetched Root2/index.html
-WARNING 2020-11-03 18:46:28,690 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 19:12:49,142 - 
+INFO 2020-11-04 20:01:55,142 - GET -> Has Fetched not modified Root1/index.html
+WARNING 2020-11-04 20:01:55,151 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 20:02:27,099 - 
 STOPPED
-INFO 2020-11-03 19:12:53,698 - GET -> Has Fetched not modified Root2/index.html
-WARNING 2020-11-03 19:12:53,708 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 19:16:55,200 - 
+INFO 2020-11-04 20:02:30,811 - GET -> Has Fetched not modified Root1/index.html
+WARNING 2020-11-04 20:02:30,831 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 20:03:36,462 - GET -> Client has requested for not available file Root1/hello.html
+WARNING 2020-11-04 20:03:36,464 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 20:03:53,962 - GET -> Client has requested for not available file Root1/hello.html
+WARNING 2020-11-04 20:03:53,962 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 20:07:12,040 - 
 STOPPED
-INFO 2020-11-03 19:17:00,594 - GET -> Has Fetched not modified Root2/index.html
-WARNING 2020-11-03 19:17:00,603 - [Errno 9] Bad file descriptor
-INFO 2020-11-03 19:17:40,378 - GET -> Has Fetched not modified Root2/hello.html
-INFO 2020-11-03 19:17:40,378 - GET -> cookie sent: SessionId=73458
-WARNING 2020-11-03 19:17:40,379 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 19:19:07,721 - 
+INFO 2020-11-04 20:07:15,088 - GET -> Client has requested for not available file Root1/hello.html
+WARNING 2020-11-04 20:07:15,096 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 20:07:23,085 - 
 STOPPED
-INFO 2020-11-03 19:19:10,516 - GET -> Has Fetched not modified Root2/hello.html
-WARNING 2020-11-03 19:19:10,529 - [Errno 9] Bad file descriptor
-DEBUG 2020-11-03 19:20:14,081 - 
+INFO 2020-11-04 20:09:26,465 - GET -> Client has requested for not available file Root1/hello.html
+WARNING 2020-11-04 20:09:26,485 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 20:10:26,292 - 
+STOPPED
+WARNING 2020-11-04 20:18:21,353 - name 'Root1' is not defined
+DEBUG 2020-11-04 20:18:26,096 - 
+STOPPED
+INFO 2020-11-04 20:19:36,428 - GET -> Client has fetched Root1/hello.html.gz
+WARNING 2020-11-04 20:19:36,446 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 20:20:10,773 - 
+STOPPED
+INFO 2020-11-04 20:20:14,372 - GET -> Has Fetched not modified Root1/hello.html.gz
+WARNING 2020-11-04 20:20:14,381 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 20:20:19,207 - GET -> Has Fetched not modified Root1/hello.html.gz
+WARNING 2020-11-04 20:20:19,208 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 20:20:55,407 - GET -> Has Fetched not modified Root1/hello.html.gz
+WARNING 2020-11-04 20:20:55,408 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 20:21:09,363 - GET -> Client has fetched Root1/hello.html.gz
+INFO 2020-11-04 20:21:09,364 - GET -> cookie sent: SessionId=81158
+WARNING 2020-11-04 20:21:09,364 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 20:21:19,726 - GET -> Has Fetched not modified Root1/hello.html.gz
+WARNING 2020-11-04 20:21:19,727 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 21:54:24,712 - 
+STOPPED
+WARNING 2020-11-04 21:54:28,691 - 'str' object has no attribute 'splitext'
+DEBUG 2020-11-04 21:55:57,482 - 
+STOPPED
+INFO 2020-11-04 21:55:58,594 - GET -> Has Fetched not modified Root1/hello.html.gz
+WARNING 2020-11-04 21:55:58,599 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 21:56:17,615 - 
+STOPPED
+INFO 2020-11-04 21:56:59,868 - GET -> Client has requested for not available file Root1/hello.html
+WARNING 2020-11-04 21:56:59,877 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 21:57:21,697 - GET -> Client has requested for not available file Root1/hello.html
+WARNING 2020-11-04 21:57:21,698 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 21:57:24,407 - GET -> Client has requested for not available file Root1/hello.html
+WARNING 2020-11-04 21:57:24,408 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 21:57:44,474 - 
+STOPPED
+INFO 2020-11-04 21:58:33,180 - GET -> Client has requested for not available file Root1/hello.htmlgz
+WARNING 2020-11-04 21:58:33,186 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 21:59:00,757 - 
+STOPPED
+INFO 2020-11-04 21:59:02,764 - GET -> Client has fetched Root1/hello.html.gz
+WARNING 2020-11-04 21:59:02,770 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 22:06:22,312 - 
+STOPPED
+INFO 2020-11-04 22:11:36,010 - GET -> Client has fetched Root2/hello.html.br
+WARNING 2020-11-04 22:11:36,023 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 22:11:39,770 - GET -> Client has fetched Root2/hello.html.br
+WARNING 2020-11-04 22:11:39,772 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 22:12:15,707 - 
+STOPPED
+INFO 2020-11-04 22:12:18,899 - GET -> Client has fetched Root2/hello.html.br
+WARNING 2020-11-04 22:12:18,906 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 22:13:17,484 - GET -> Has Fetched not modified Root2/hello.html
+WARNING 2020-11-04 22:13:17,484 - local variable 'finalextension' referenced before assignment
+DEBUG 2020-11-04 22:13:49,096 - 
+STOPPED
+INFO 2020-11-04 22:13:50,745 - GET -> Has Fetched not modified Root2/hello.html
+WARNING 2020-11-04 22:13:50,750 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 22:14:07,191 - GET -> Client has fetched Root2/hello.html
+WARNING 2020-11-04 22:14:07,193 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 22:14:12,373 - GET -> Client has fetched Root2/hello.html
+WARNING 2020-11-04 22:14:12,375 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 22:14:28,751 - GET -> Client has fetched Root1/hello.html.gz
+WARNING 2020-11-04 22:14:28,753 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 22:16:01,405 - 
+STOPPED
+WARNING 2020-11-04 22:16:04,921 - name 'gzip' is not defined
+DEBUG 2020-11-04 22:16:29,701 - 
+STOPPED
+INFO 2020-11-04 22:16:32,952 - GET -> Client has fetched Root1/hello.html.gz
+WARNING 2020-11-04 22:16:32,960 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 22:17:04,450 - 
+STOPPED
+INFO 2020-11-04 22:17:40,772 - GET -> Has Fetched not modified Root1/hello.html.gz
+WARNING 2020-11-04 22:17:40,790 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 22:17:49,922 - 
+STOPPED
+INFO 2020-11-04 22:18:29,178 - GET -> Client has fetched Root1/hello.html.gz
+WARNING 2020-11-04 22:18:29,193 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 22:31:33,597 - GET -> Client has fetched Root1/hello.html.gz
+WARNING 2020-11-04 22:31:33,599 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 22:42:41,230 - 
+STOPPED
+INFO 2020-11-04 22:45:57,096 - GET -> Has Fetched not modified Root1/hello.html.gz
+WARNING 2020-11-04 22:45:57,108 - [Errno 9] Bad file descriptor
+INFO 2020-11-04 22:45:59,247 - GET -> Has Fetched not modified Root1/hello.html.gz
+WARNING 2020-11-04 22:45:59,247 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 22:46:50,362 - 
+STOPPED
+INFO 2020-11-04 22:47:15,356 - GET -> Has Fetched not modified Root1/hello.html.gz
+WARNING 2020-11-04 22:47:15,363 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-04 22:47:18,621 - 
 STOPPED

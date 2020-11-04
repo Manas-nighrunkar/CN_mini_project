@@ -170,6 +170,20 @@ class HTTP_Server(TCP_Server):
             else:
                 filename = url
         
+        #name, extension = os.path.splitext(filename)
+        finalextension = ""
+        encoding = (request.dict['Accept-Encoding']).split(", ")
+        for i in range (len(encoding)):
+            if(encoding[i] == 'gzip'):
+                encoding[i] = 'gz'
+            if(os.path.exists(filename + "." + encoding[i])):
+                filename = filename + "." + encoding[i]
+                if(encoding[i] != 'gz'):
+                    finalextension = encoding[i]
+                else:
+                    finalextension = 'gzip'
+                break
+            
         #if file exists calculate its modification time
         if os.path.exists(filename):
             modificationtime = time.ctime(os.path.getmtime(filename))
@@ -230,11 +244,13 @@ class HTTP_Server(TCP_Server):
                             'Content-length': body_length,
                             'Last-Modified': modificationtime,
                             'Set-Cookie': cookie,
+                            'Content-Encoding': "gzip",
                             }
         else:
             extra_headers = {'Content-Type': content_type,
                             'Content-length': body_length,
                             'Last-Modified': modificationtime,
+                            'Content-Encoding': finalextension,
                             }
 
             
@@ -314,8 +330,7 @@ class HTTP_Server(TCP_Server):
             f.write(request.info)
 
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'
-        with open("success.html",'rb') as f:
-            response_body = f.read()
+        response_body = "<h1> SUCCESS </h1>".encode()
          
         body_length = len(response_body)
         if 'Cookie' not in request.dict.keys():
@@ -353,10 +368,11 @@ class HTTP_Server(TCP_Server):
         if os.path.exists(filename):
             delete_logger.info('DELETE -> Client has deleted ' + filename)
             response_line = self.response_line(200)
-            os.remove(filename)
-            with open("success.html",'rb') as f:
-                response_body = f.read()
-
+            try:            
+                os.remove(filename)
+                response_body = "<h1> SUCCESS </h1>".encode()
+            except:
+                response_body = "<h1> Permission Error </h1>".encode()
         else:
             response_line = self.response_line(404)
             response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode() 
@@ -527,7 +543,6 @@ class HTTP_Request():
         self.http_method = words[0]
         self.uri = words[1]
         self.uri = self.root + self.uri
-        print(self.uri)
         if(self.http_method == 'GET' or self.http_method == 'HEAD' or self.http_method == 'DELETE'):
             self.handle_get_headers(request_line)
         elif(self.http_method == 'POST' or self.http_method == 'PUT'):
