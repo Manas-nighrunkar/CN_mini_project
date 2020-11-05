@@ -29,14 +29,14 @@ class TCP_Server:
         self.s.bind((self.host, self.port))
 
         #start listening for connections on given port
-        self.s.listen(100)
+        self.s.listen(200)
         #self.server_logger.debug("Server Listening at" + str(self.s.getsockname()[0]) + str(self.s.getsockname()[1]))
         print("Server Listening at", self.s.getsockname())
         while True:
             try:
                 conn, addr = self.s.accept()
             except:
-                self.server_logger.debug("\nSTOPPED")
+                self.server_logger.debug("STOPPED")
                 sys.exit()
 
             self.CLIENTS.append(conn)
@@ -98,6 +98,7 @@ class HTTP_Server(TCP_Server):
             'Connection': 'Close',
             'Content-Type': 'text/html',
             'Last-Modified': gmttime,
+            'Content-Encoding': "text",
             }
     #status_code = httplib.responses
     status_code = {
@@ -171,7 +172,6 @@ class HTTP_Server(TCP_Server):
                 filename = url
         
         #name, extension = os.path.splitext(filename)
-        finalextension = ""
         encoding = (request.dict['Accept-Encoding']).split(", ")
         for i in range (len(encoding)):
             if(encoding[i] == 'gzip'):
@@ -183,7 +183,7 @@ class HTTP_Server(TCP_Server):
                 else:
                     finalextension = 'gzip'
                 break
-            
+
         #if file exists calculate its modification time
         if os.path.exists(filename):
             modificationtime = time.ctime(os.path.getmtime(filename))
@@ -192,6 +192,7 @@ class HTTP_Server(TCP_Server):
 
         #firstly check if request headers have if modified since headers then only compare
         #if not use normal method
+        finalextension = 'text'
         if 'If-Modified-Since' in request.dict.keys():
 
             #if file is modified send a new resonse containing file body
@@ -244,7 +245,7 @@ class HTTP_Server(TCP_Server):
                             'Content-length': body_length,
                             'Last-Modified': modificationtime,
                             'Set-Cookie': cookie,
-                            'Content-Encoding': "gzip",
+                            'Content-Encoding': finalextension,
                             }
         else:
             extra_headers = {'Content-Type': content_type,
@@ -511,7 +512,7 @@ class HTTP_Request():
         self.root = configur.get('My_Settings','RootDirectory')
         self.log_file_name = configur.get('My_Settings','LogFileName')
         #parse the data into lines
-        #print(data)
+        print(data)
         self.parse(data)
         #Log file
         LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
