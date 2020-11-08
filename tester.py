@@ -80,7 +80,6 @@ def headerMaker(method, requestedFile):
     return request
 
 def getRequestMaker(file, c):
-    print(c)
     for i in range (0, c): 
         testerSocket = socket(AF_INET, SOCK_STREAM)
         try:
@@ -90,7 +89,7 @@ def getRequestMaker(file, c):
             sys.exit()
         request = headerMaker("GET", file)
         testerSocket.send(request.encode())
-        sleep(0.5)
+        sleep(0.1)
         print(testerSocket.recv(4096).decode(), "\n")
 
 def postRequestMaker(file, c):

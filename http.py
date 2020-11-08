@@ -9,6 +9,7 @@ import logging
 import random
 from configparser import ConfigParser
 import signal
+import base64
 
 class TCP_Server:
     
@@ -108,7 +109,8 @@ class HTTP_Server(TCP_Server):
             400: 'Bad Request',
             204: 'No Content',
             201: 'Created',
-            304: 'Not Modified'
+            304: 'Not Modified',
+            401: 'Unauthorized',
             }
 
 ################################################################################################################################# 
@@ -171,6 +173,7 @@ class HTTP_Server(TCP_Server):
             else:
                 filename = url
         
+        finalextension = 'text'
         #name, extension = os.path.splitext(filename)
         encoding = (request.dict['Accept-Encoding']).split(", ")
         for i in range (len(encoding)):
@@ -190,71 +193,86 @@ class HTTP_Server(TCP_Server):
         else:
             modificationtime = self.gmttime
 
+        configur = ConfigParser() 
+        configur.read('config.ini')
+        auth_file = configur.get('Authorization','file')
+        #print(auth_file)
         #firstly check if request headers have if modified since headers then only compare
         #if not use normal method
-        finalextension = 'text'
-        if 'If-Modified-Since' in request.dict.keys():
+        flag = 0
+        if 'Authorization' in request.dict.keys():
+            code = request.dict['Authorization']
+            base64_bytes = code.split(" ")[1].encode("ascii") 
+            sample_string_bytes = base64.b64decode(base64_bytes) 
+            string = sample_string_bytes.decode("ascii")
+            username = string.split(":")[0]
+            password = string.split(":")[1]
+            if(username == configur.get('Authorization','username') and password == configur.get('Authorization', 'password')):
+                flag = 1
+        if (auth_file.find(filename) != -1) and flag == 0:
+            response_line = self.response_line(401)
+            response_body = "<h1>Authentication required</h1>".encode()
+            get_logger.info("authentication")
+        else:
+            if 'If-Modified-Since' in request.dict.keys():
 
-            #if file is modified send a new resonse containing file body
-            if(modificationtime != request.dict['If-Modified-Since']):
+                #if file is modified send a new resonse containing file body
+                if(modificationtime != request.dict['If-Modified-Since']):
+                    if os.path.exists(filename):
+                        get_logger.info('GET -> Client has fetched ' + filename)
+                        response_line = self.response_line(200)
+                        
+                        #open file in binary mode so it is in bytes
+                        with open(filename,'rb') as f:
+                            response_body = f.read()                
+                    
+                    # returns not found error if file is not present
+                    else:
+                        response_line = self.response_line(404)
+                        get_logger.info('GET -> Client has requested for not available file ' + filename ) 
+                        response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
+                
+                #if the file is not modified simply send 304
+                else:
+                    get_logger.info('GET -> Has Fetched not modified ' + filename)
+                    response_line = self.response_line(304)
+                    response_body = ''
+
+            #if modified since headers is missing    
+            else:
                 if os.path.exists(filename):
                     get_logger.info('GET -> Client has fetched ' + filename)
                     response_line = self.response_line(200)
-                    
                     #open file in binary mode so it is in bytes
                     with open(filename,'rb') as f:
-                        response_body = f.read()                
-                
+                        response_body = f.read() 
+                    
+
                 # returns not found error if file is not present
                 else:
                     response_line = self.response_line(404)
-                    get_logger.info('GET -> Client has requested for not available file ' + filename ) 
+                    response_headers = self.response_headers()
+                    get_logger.info('GET -> Client has requested for not available file ' + filename )
                     response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
-            
-            #if the file is not modified simply send 304
-            else:
-                get_logger.info('GET -> Has Fetched not modified ' + filename)
-                response_line = self.response_line(304)
-                response_body = ''
-
-        #if modified since headers is missing    
-        else:
-            if os.path.exists(filename):
-                get_logger.info('GET -> Client has fetched ' + filename)
-                response_line = self.response_line(200)
-                #open file in binary mode so it is in bytes
-                with open(filename,'rb') as f:
-                    response_body = f.read() 
-                
-
-            # returns not found error if file is not present
-            else:
-                response_line = self.response_line(404)
-                response_headers = self.response_headers()
-                get_logger.info('GET -> Client has requested for not available file ' + filename )
-                response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
             
         #to get the content type
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'
         body_length = len(response_body)
+        extra_headers = {'Content-Type': content_type,
+                        'Content-length': body_length,
+                        'Last-Modified': modificationtime,
+                        'Content-Encoding': finalextension,
+                        }
         if 'Cookie' not in request.dict.keys():
             cookie_value = str(self.random_number)
             cookie = 'SessionId' + '=' + cookie_value
             get_logger.info("GET -> cookie sent: " + cookie)  
-            extra_headers = {'Content-Type': content_type,
-                            'Content-length': body_length,
-                            'Last-Modified': modificationtime,
-                            'Set-Cookie': cookie,
-                            'Content-Encoding': finalextension,
-                            }
+            extra_headers['Set-Cookie'] = cookie
         else:
-            extra_headers = {'Content-Type': content_type,
-                            'Content-length': body_length,
-                            'Last-Modified': modificationtime,
-                            'Content-Encoding': finalextension,
-                            }
+            pass
 
-            
+        
+        extra_headers['WWW-Authenticate'] = 'Basic realm="Access to the staging site", charset="UTF-8"'
         response_headers = self.response_headers(extra_headers)
 
         blank_line = "\r\n"
@@ -273,20 +291,41 @@ class HTTP_Server(TCP_Server):
             filename = "default.html"
         else:
             filename = request.uri.strip('/')   #remove / from string
-        
-        #if requested file is present log the infor and send the file body
-        if os.path.exists(filename):
-            post_logger.info('POST -> Client has accessed ' + filename + ' and the post info is - ' + '\n' + request.info)
-            response_line = self.response_line(200)     
-            
-            with open(filename,'rb') as f:
-                response_body = f.read()
 
-        # returns not found error if file is not present
+        configur = ConfigParser() 
+        configur.read('config.ini')
+        auth_file = configur.get('Authorization','file')
+        #print(auth_file)
+        #firstly check if request headers have if modified since headers then only compare
+        #if not use normal method
+        flag = 0
+        if 'Authorization' in request.dict.keys():
+            code = request.dict['Authorization']
+            base64_bytes = code.split(" ")[1].encode("ascii") 
+            sample_string_bytes = base64.b64decode(base64_bytes) 
+            string = sample_string_bytes.decode("ascii")
+            username = string.split(":")[0]
+            password = string.split(":")[1]
+            if(username == configur.get('Authorization','username') and password == configur.get('Authorization', 'password')):
+                flag = 1
+        if (auth_file.find(filename) != -1) and flag == 0:
+            response_line = self.response_line(401)
+            response_body = "<h1>Authentication required</h1>".encode()
+            post_logger.info("authentication")
         else:
-            response_line = self.response_line(404)
-            response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
-        
+            #if requested file is present log the infor and send the file body
+            if os.path.exists(filename):
+                post_logger.info('POST -> Client has accessed ' + filename + ' and the post info is - ' + '\n' + request.info)
+                response_line = self.response_line(200)     
+                
+                with open(filename,'rb') as f:
+                    response_body = f.read()
+
+            # returns not found error if file is not present
+            else:
+                response_line = self.response_line(404)
+                response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
+            
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'
         body_length = len(response_body)
         if 'Cookie' not in request.dict.keys():
@@ -301,7 +340,7 @@ class HTTP_Server(TCP_Server):
             extra_headers = {'Content-Type': content_type,
                              'Content-length': body_length,
                             }
-
+        extra_headers['WWW-Authenticate'] = 'Basic realm="Access to the staging site", charset="UTF-8"'
         response_headers = self.response_headers(extra_headers)
         blank_line = "\r\n"
         headers =  "%s%s%s" % (
@@ -320,15 +359,37 @@ class HTTP_Server(TCP_Server):
             filename = request.uri.strip('/')   #remove / from string
         else:
             filename = ""
-        if os.path.exists(filename):
-            put_logger.info('PUT -> Client has written in ' + filename + ' - ' + '\n' + request.info)
-            response_line = self.response_line(200)
-        else:
-            put_logger.info('PUT -> Client has created and written in ' + filename + ' - ' + '\n' + request.info)
-            response_line = self.response_line(201)
 
-        with open(filename,"w") as f:
-            f.write(request.info)
+        configur = ConfigParser() 
+        configur.read('config.ini')
+        auth_file = configur.get('Authorization','file')
+        #print(auth_file)
+        #firstly check if request headers have if modified since headers then only compare
+        #if not use normal method
+        flag = 0
+        if 'Authorization' in request.dict.keys():
+            code = request.dict['Authorization']
+            base64_bytes = code.split(" ")[1].encode("ascii") 
+            sample_string_bytes = base64.b64decode(base64_bytes) 
+            string = sample_string_bytes.decode("ascii")
+            username = string.split(":")[0]
+            password = string.split(":")[1]
+            if(username == configur.get('Authorization','username') and password == configur.get('Authorization', 'password')):
+                flag = 1
+        if (auth_file.find(filename) != -1) and flag == 0:
+            response_line = self.response_line(401)
+            response_body = "<h1>Authentication required</h1>".encode()
+            put_logger.info("authentication")
+        else:
+            if os.path.exists(filename):
+                put_logger.info('PUT -> Client has written in ' + filename + ' - ' + '\n' + request.info)
+                response_line = self.response_line(200)
+            else:
+                put_logger.info('PUT -> Client has created and written in ' + filename + ' - ' + '\n' + request.info)
+                response_line = self.response_line(201)
+
+            with open(filename,"w") as f:
+                f.write(request.info)
 
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'
         response_body = "<h1> SUCCESS </h1>".encode()
@@ -347,7 +408,7 @@ class HTTP_Server(TCP_Server):
             extra_headers = {'Content-Type': content_type,
                             'Content-length': body_length,
                             }
-
+        extra_headers['WWW-Authenticate'] = 'Basic realm="Access to the staging site", charset="UTF-8"'
         response_headers = self.response_headers(extra_headers)
 
         blank_line = "\r\n"
@@ -365,19 +426,40 @@ class HTTP_Server(TCP_Server):
             filename = request.uri.strip('/')   #remove / from string
         else:
             filename = ""
-        
-        if os.path.exists(filename):
-            delete_logger.info('DELETE -> Client has deleted ' + filename)
-            response_line = self.response_line(200)
-            try:            
-                os.remove(filename)
-                response_body = "<h1> SUCCESS </h1>".encode()
-            except:
-                response_body = "<h1> Permission Error </h1>".encode()
+
+        configur = ConfigParser() 
+        configur.read('config.ini')
+        auth_file = configur.get('Authorization','file')
+        #print(auth_file)
+        #firstly check if request headers have if modified since headers then only compare
+        #if not use normal method
+        flag = 0
+        if 'Authorization' in request.dict.keys():
+            code = request.dict['Authorization']
+            base64_bytes = code.split(" ")[1].encode("ascii") 
+            sample_string_bytes = base64.b64decode(base64_bytes) 
+            string = sample_string_bytes.decode("ascii")
+            username = string.split(":")[0]
+            password = string.split(":")[1]
+            if(username == configur.get('Authorization','username') and password == configur.get('Authorization', 'password')):
+                flag = 1
+        if (auth_file.find(filename) != -1) and flag == 0:
+            response_line = self.response_line(401)
+            response_body = "<h1>Authentication required</h1>".encode()
+            delete_logger.info("authentication")
         else:
-            response_line = self.response_line(404)
-            response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode() 
-            delete_logger.info('DELETE -> Client has requested to delete not available ' + filename)
+            if os.path.exists(filename):
+                delete_logger.info('DELETE -> Client has deleted ' + filename)
+                response_line = self.response_line(200)
+                try:            
+                    os.remove(filename)
+                    response_body = "<h1> SUCCESS </h1>".encode()
+                except:
+                    response_body = "<h1> Permission Error </h1>".encode()
+            else:
+                response_line = self.response_line(404)
+                response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode() 
+                delete_logger.info('DELETE -> Client has requested to delete not available ' + filename)
 
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'
         body_length = len(response_body)
@@ -393,7 +475,7 @@ class HTTP_Server(TCP_Server):
             extra_headers = {'Content-Type': content_type,
                              'Content-length': body_length,
                             }
-
+        extra_headers['WWW-Authenticate'] = 'Basic realm="Access to the staging site", charset="UTF-8"'
         response_headers = self.response_headers(extra_headers)
 
         blank_line = "\r\n"
@@ -420,35 +502,57 @@ class HTTP_Server(TCP_Server):
             modificationtime = time.ctime(os.path.getmtime(filename))
         else:
             modificationtime = self.gmttime
-        if 'If-Modified-Since' in request.dict.keys():
-            if(modificationtime != request.dict['If-Modified-Since']):
+
+        configur = ConfigParser() 
+        configur.read('config.ini')
+        auth_file = configur.get('Authorization','file')
+        #print(auth_file)
+        #firstly check if request headers have if modified since headers then only compare
+        #if not use normal method
+        flag = 0
+        if 'Authorization' in request.dict.keys():
+            code = request.dict['Authorization']
+            base64_bytes = code.split(" ")[1].encode("ascii") 
+            sample_string_bytes = base64.b64decode(base64_bytes) 
+            string = sample_string_bytes.decode("ascii")
+            username = string.split(":")[0]
+            password = string.split(":")[1]
+            if(username == configur.get('Authorization','username') and password == configur.get('Authorization', 'password')):
+                flag = 1
+        if (auth_file.find(filename) != -1) and flag == 0:
+            response_line = self.response_line(401)
+            response_body = "<h1>Authentication required</h1>".encode()
+            head_logger.info("authentication")
+        else:
+            if 'If-Modified-Since' in request.dict.keys():
+                if(modificationtime != request.dict['If-Modified-Since']):
+                    if os.path.exists(filename):
+                        head_logger.info('HEAD -> Client has fetched ' + filename)
+                        response_line = self.response_line(200)
+                    
+                    # returns not found error if file is not present
+                    else:
+                        response_line = self.response_line(404)
+                        head_logger.warning('HEAD -> Client has requested for not available file ' + filename ) 
+                        response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
+    
+                else:
+                    head_logger.info('HEAD -> Has Fetched not modified ' + filename)
+                    response_line = self.response_line(304)
+                    response_body = ''
+                
+            else:
                 if os.path.exists(filename):
                     head_logger.info('HEAD -> Client has fetched ' + filename)
                     response_line = self.response_line(200)
-                
+                    
+
                 # returns not found error if file is not present
                 else:
                     response_line = self.response_line(404)
-                    head_logger.warning('HEAD -> Client has requested for not available file ' + filename ) 
+                    response_headers = self.response_headers()
+                    head_logger.info('HEAD -> Client has requested for not available file ' + filename )
                     response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
- 
-            else:
-                head_logger.info('HEAD -> Has Fetched not modified ' + filename)
-                response_line = self.response_line(304)
-                response_body = ''
-            
-        else:
-            if os.path.exists(filename):
-                head_logger.info('HEAD -> Client has fetched ' + filename)
-                response_line = self.response_line(200)
-                 
-
-            # returns not found error if file is not present
-            else:
-                response_line = self.response_line(404)
-                response_headers = self.response_headers()
-                head_logger.info('HEAD -> Client has requested for not available file ' + filename )
-                response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
 
         #to get the content type
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'   
@@ -464,7 +568,7 @@ class HTTP_Server(TCP_Server):
             extra_headers = {'Content-Type': content_type,
                             'Last-Modified': modificationtime,
                             }
-            
+        extra_headers['WWW-Authenticate'] = 'Basic realm="Access to the staging site", charset="UTF-8"'
         response_headers = self.response_headers(extra_headers)
         response_body = ''
 
@@ -512,7 +616,7 @@ class HTTP_Request():
         self.root = configur.get('My_Settings','RootDirectory')
         self.log_file_name = configur.get('My_Settings','LogFileName')
         #parse the data into lines
-        print(data)
+        #print(data)
         self.parse(data)
         #Log file
         LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
