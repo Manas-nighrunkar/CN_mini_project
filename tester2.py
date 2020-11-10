@@ -1,3 +1,4 @@
+import http.client
 from socket import *
 from threading import *
 import getopt
@@ -64,7 +65,7 @@ httpVersion = "HTTP/1.1"
 
 #c = number of requests to send per thread
 #threads = number of simultaneous threads to send n requests in a loop
-
+testcase = unittest.TestCase()
 
 def headerMaker(method, requestedFile):
     request = method + " " + requestedFile + " " + httpVersion + "\r\n"
@@ -82,44 +83,72 @@ def headerMaker(method, requestedFile):
 
 def getRequestMaker(file, c):
     for i in range (0, c): 
-        testerSocket = socket(AF_INET, SOCK_STREAM)
+        conn = http.client.HTTPConnection('127.0.0.1', 8888)
+        #headers = {}
+        #passList = []
+        headers = {'Authorization': 'Basic YWRtaW46YWRtaW4='}
+        conn.request("GET", getFile , headers=headers)
+        response = conn.getresponse()
+        #print("Status: {} and reason: {}".format(response.status, response.reason))
+        status = response.status
+        reason = response.reason
         try:
-            testerSocket.connect(('', port))
-        except Exception as e:
-            print(e)
-            sys.exit()
-        request = headerMaker("GET", file)
-        testerSocket.send(request.encode())
-        sleep(0.1)
-        print(testerSocket.recv(4096).decode(), "\n")
+            testcase.assertEqual(status, 200)
+            testcase.assertEqual(reason, "OK")
+            print("pass")
+            #passList.append("pass")
+        except:
+            #passList.append("fail")
+            print("fail")
+        unittest.main()
+        #headers = response.getheaders()
+        #print("Headers: {}".format(headers))
 
 def postRequestMaker(file, c):
     for i in range (0, c):
-        testerSocket = socket(AF_INET, SOCK_STREAM)
+        conn = http.client.HTTPConnection('127.0.0.1', 8888)
+        #headers = {}
+        #passList = []
+        data = "POST data from tester"
+        headers = {'Authorization': 'Basic YWRtaW46YWRtaW4='}
+        conn.request("POST", postFile, data , headers=headers)
+        response = conn.getresponse()
+        #print("Status: {} and reason: {}".format(response.status, response.reason))
+        status = response.status
+        reason = response.reason
         try:
-            testerSocket.connect(('', port))
-        except Exception as e:
-            print(e)
-            sys.exit()
-        request = headerMaker("POST", file)
-        request += "This is test Data for POST" 
-        testerSocket.send(request.encode())
-        sleep(0.5)
-        print(testerSocket.recv(4096).decode(), "\n")
+            testcase.assertEqual(status, 200)
+            testcase.assertEqual(reason, "OK")
+            print("pass")
+            #passList.append("pass")
+        except:
+            #passList.append("fail")
+            print("fail")
+        #headers = response.getheaders()
+        #print("Headers: {}".format(headers))
 
 def putRequestMaker(file, c):
     for i in range (0, c):
-        testerSocket = socket(AF_INET, SOCK_STREAM)
+        conn = http.client.HTTPConnection('127.0.0.1', 8888)
+        #headers = {}
+        #passList = []
+        data = "PUT data from tester"
+        headers = {'Authorization': 'Basic YWRtaW46YWRtaW4='}
+        conn.request("PUT", putFile, data , headers=headers)
+        response = conn.getresponse()
+        #print("Status: {} and reason: {}".format(response.status, response.reason))
+        status = response.status
+        reason = response.reason
         try:
-            testerSocket.connect(('', port))
-        except Exception as e:
-            print(e)
-            sys.exit()
-        request = headerMaker("PUT", file)
-        request += "This is test Data for PUT"
-        testerSocket.send(request.encode())
-        sleep(0.5)
-        print(testerSocket.recv(4096).decode(), "\n")
+            testcase.assertEqual(status, 200)
+            testcase.assertEqual(reason, "OK")
+            print("pass")
+            #passList.append("pass")
+        except:
+            #passList.append("fail")
+            print("fail")
+        #headers = response.getheaders()
+        #print("Headers: {}".format(headers))
 
 def deleteRequestMaker(file, c):
     for i in range (0, c):

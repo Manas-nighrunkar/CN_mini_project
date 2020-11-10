@@ -15,7 +15,7 @@ class TCP_Server:
     
     server_logger = logging.getLogger() 
     CLIENTS = []
-    def __init__(self, host = '127.0.0.1', port = 8888):
+    def __init__(self, host = '127.0.0.1', port = 12345):
         #address for our server
         self.host = host
         #port for our server
@@ -111,11 +111,12 @@ class HTTP_Server(TCP_Server):
             201: 'Created',
             304: 'Not Modified',
             401: 'Unauthorized',
+            403: 'Forbidden',
             }
 
 ################################################################################################################################# 
 
-    #handles tje request GET /index.html HTTP 1.1
+    #handles the request GET /index.html HTTP 1.1
     def handle_request(self, data):
 
         #create an instance of request
@@ -125,7 +126,7 @@ class HTTP_Server(TCP_Server):
             #to check which method is needed
             handler = getattr(self, 'handle_%s' % request.http_method)
         except AttributeError:
-            handler = self.HTTP_501_handler
+            handler = self.HTTP_400_handler
         
         #handler of methods(get, post)
         headers, body = handler(request)
@@ -195,7 +196,8 @@ class HTTP_Server(TCP_Server):
 
         configur = ConfigParser() 
         configur.read('config.ini')
-        auth_file = configur.get('Authorization','file')
+        auth_file = configur.get('Authorization','file_auth')
+        for_file = configur.get('Authorization','file_for')
         #print(auth_file)
         #firstly check if request headers have if modified since headers then only compare
         #if not use normal method
@@ -209,7 +211,12 @@ class HTTP_Server(TCP_Server):
             password = string.split(":")[1]
             if(username == configur.get('Authorization','username') and password == configur.get('Authorization', 'password')):
                 flag = 1
-        if (auth_file.find(filename) != -1) and flag == 0:
+        if (for_file.find(filename) != -1):
+            response_line = self.response_line(403)
+            response_body = "<h1>Forbidden File</h1>".encode()
+            get_logger.info("Forbidden file")
+
+        elif (auth_file.find(filename) != -1) and flag == 0:
             response_line = self.response_line(401)
             response_body = "<h1>Authentication required</h1>".encode()
             get_logger.info("authentication")
@@ -294,7 +301,8 @@ class HTTP_Server(TCP_Server):
 
         configur = ConfigParser() 
         configur.read('config.ini')
-        auth_file = configur.get('Authorization','file')
+        auth_file = configur.get('Authorization','file_auth')
+        for_file = configur.get('Authorization','file_for')
         #print(auth_file)
         #firstly check if request headers have if modified since headers then only compare
         #if not use normal method
@@ -308,7 +316,12 @@ class HTTP_Server(TCP_Server):
             password = string.split(":")[1]
             if(username == configur.get('Authorization','username') and password == configur.get('Authorization', 'password')):
                 flag = 1
-        if (auth_file.find(filename) != -1) and flag == 0:
+        if (for_file.find(filename) != -1):
+            response_line = self.response_line(403)
+            response_body = "<h1>Forbidden File</h1>".encode()
+            post_logger.info("Forbidden file")
+
+        elif (auth_file.find(filename) != -1) and flag == 0:
             response_line = self.response_line(401)
             response_body = "<h1>Authentication required</h1>".encode()
             post_logger.info("authentication")
@@ -362,7 +375,8 @@ class HTTP_Server(TCP_Server):
 
         configur = ConfigParser() 
         configur.read('config.ini')
-        auth_file = configur.get('Authorization','file')
+        auth_file = configur.get('Authorization','file_auth')
+        for_file = configur.get('Authorization','file_for')
         #print(auth_file)
         #firstly check if request headers have if modified since headers then only compare
         #if not use normal method
@@ -376,7 +390,12 @@ class HTTP_Server(TCP_Server):
             password = string.split(":")[1]
             if(username == configur.get('Authorization','username') and password == configur.get('Authorization', 'password')):
                 flag = 1
-        if (auth_file.find(filename) != -1) and flag == 0:
+        if (for_file.find(filename) != -1):
+            response_line = self.response_line(403)
+            response_body = "<h1>Forbidden File</h1>".encode()
+            put_logger.info("Forbidden file")
+
+        elif (auth_file.find(filename) != -1) and flag == 0:
             response_line = self.response_line(401)
             response_body = "<h1>Authentication required</h1>".encode()
             put_logger.info("authentication")
@@ -429,7 +448,8 @@ class HTTP_Server(TCP_Server):
 
         configur = ConfigParser() 
         configur.read('config.ini')
-        auth_file = configur.get('Authorization','file')
+        auth_file = configur.get('Authorization','file_auth')
+        for_file = configur.get('Authorization','file_for')
         #print(auth_file)
         #firstly check if request headers have if modified since headers then only compare
         #if not use normal method
@@ -443,7 +463,12 @@ class HTTP_Server(TCP_Server):
             password = string.split(":")[1]
             if(username == configur.get('Authorization','username') and password == configur.get('Authorization', 'password')):
                 flag = 1
-        if (auth_file.find(filename) != -1) and flag == 0:
+        if (for_file.find(filename) != -1):
+            response_line = self.response_line(403)
+            response_body = "<h1>Forbidden File</h1>".encode()
+            delete_logger.info("Forbidden file")
+
+        elif (auth_file.find(filename) != -1) and flag == 0:
             response_line = self.response_line(401)
             response_body = "<h1>Authentication required</h1>".encode()
             delete_logger.info("authentication")
@@ -505,7 +530,8 @@ class HTTP_Server(TCP_Server):
 
         configur = ConfigParser() 
         configur.read('config.ini')
-        auth_file = configur.get('Authorization','file')
+        auth_file = configur.get('Authorization','file_auth')
+        for_file = configur.get('Authorization','file_for')
         #print(auth_file)
         #firstly check if request headers have if modified since headers then only compare
         #if not use normal method
@@ -519,7 +545,12 @@ class HTTP_Server(TCP_Server):
             password = string.split(":")[1]
             if(username == configur.get('Authorization','username') and password == configur.get('Authorization', 'password')):
                 flag = 1
-        if (auth_file.find(filename) != -1) and flag == 0:
+        if (for_file.find(filename) != -1):
+            response_line = self.response_line(403)
+            response_body = "<h1>Forbidden File</h1>".encode()
+            head_logger.info("Forbidden file")
+
+        elif (auth_file.find(filename) != -1) and flag == 0:
             response_line = self.response_line(401)
             response_body = "<h1>Authentication required</h1>".encode()
             head_logger.info("authentication")
@@ -582,12 +613,12 @@ class HTTP_Server(TCP_Server):
 
 #################################################################################################################################
     #function for not implemented methods   
-    def HTTP_501_handler(self, request):
-        response_line = self.response_line(status_code = 501)
+    def HTTP_400_handler(self, request):
+        response_line = self.response_line(status_code = 400)
 
         blank_line = "\r\n"
 
-        response_body = "<h1> ERROR: NOT IMPLEMENTED </h1>".encode()
+        response_body = "<h1> ERROR: BAD REQUEST </h1>".encode()
         content_length = len(response_body)
         extra_headers = {'Content-length': content_length
                         }
@@ -616,7 +647,7 @@ class HTTP_Request():
         self.root = configur.get('My_Settings','RootDirectory')
         self.log_file_name = configur.get('My_Settings','LogFileName')
         #parse the data into lines
-        #print(data)
+        print(data)
         self.parse(data)
         #Log file
         LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"

@@ -1,0 +1,2902 @@
+DEBUG 2020-11-10 09:11:45,271 - STOPPED
+INFO 2020-11-10 09:11:47,755 - GET -> Has Fetched not modified Root1/index.html
+WARNING 2020-11-10 09:11:47,757 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:11:55,436 - Forbidden file
+WARNING 2020-11-10 09:11:55,436 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:12:10,259 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:12:10,261 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:12:10,263 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:12:10,273 - GET -> Client has requested for not available file Root1/test.html
+INFO 2020-11-10 09:12:10,273 - GET -> cookie sent: SessionId=16051
+WARNING 2020-11-10 09:12:10,273 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:12:10,277 - GET -> Client has requested for not available file Root1/not_exists.html
+INFO 2020-11-10 09:12:10,277 - GET -> cookie sent: SessionId=16051
+WARNING 2020-11-10 09:12:10,278 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:12:10,285 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:12:10,294 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:12:10,297 - No option 'file' in section: 'Authorization'
+DEBUG 2020-11-10 09:13:38,857 - STOPPED
+WARNING 2020-11-10 09:13:42,482 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:13:42,484 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:13:42,486 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,492 - GET -> Client has requested for not available file Root1/test.html
+INFO 2020-11-10 09:13:42,494 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,494 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,505 - GET -> Client has requested for not available file Root1/not_exists.html
+INFO 2020-11-10 09:13:42,505 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,505 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:13:42,508 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:13:42,519 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,528 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:13:42,528 - DELETE -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,528 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,540 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:13:42,540 - DELETE -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,540 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,547 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,548 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,548 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,556 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,557 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,557 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,558 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,558 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,558 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,567 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,568 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,569 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:42,570 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,570 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,571 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:13:42,571 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,571 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,571 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,571 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,572 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:42,572 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:13:42,572 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,572 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,572 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,581 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,581 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,581 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,582 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,582 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:42,582 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:13:42,582 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,582 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,582 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,584 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,585 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,585 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,585 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,586 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,586 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,587 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,587 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,587 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,589 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,590 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,590 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,590 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,591 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:42,592 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:13:42,592 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,592 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,592 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,596 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,596 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,597 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:42,597 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,597 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,598 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:13:42,598 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,598 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,598 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,599 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,599 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,599 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:42,599 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,599 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:13:42,599 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,605 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,605 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,606 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,606 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,607 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,607 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:42,607 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,608 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:42,608 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:42,608 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:42,608 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:13:42,608 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,562 - GET -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:13:44,562 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,562 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,567 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,567 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,567 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,574 - Forbidden file
+INFO 2020-11-10 09:13:44,575 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,575 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,585 - authentication
+INFO 2020-11-10 09:13:44,585 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,585 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,590 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,590 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,590 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,602 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,603 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,603 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,604 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,604 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,604 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,605 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,605 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,606 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,606 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,606 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,606 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,613 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,614 - HEAD -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:44,615 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,615 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,615 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:13:44,615 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,617 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,617 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,617 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,619 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,619 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,619 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,620 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,621 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,621 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,622 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,622 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,622 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,623 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,623 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,623 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,624 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,624 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,624 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,624 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,625 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,625 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,633 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,633 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,634 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,634 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,634 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,634 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,635 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,635 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,635 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,637 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,637 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,637 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,637 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,637 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,637 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,638 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,639 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,639 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,642 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,642 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,642 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,644 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,644 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,644 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,645 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,645 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,645 - HEAD -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:44,646 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,646 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:13:44,646 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,647 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,647 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,647 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:44,649 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:13:44,649 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:44,649 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,605 - HEAD -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:13:45,605 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,605 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,608 - authentication
+INFO 2020-11-10 09:13:45,609 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,609 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,618 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for Simple Post
+INFO 2020-11-10 09:13:45,618 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,618 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,628 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:13:45,628 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,629 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,630 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,633 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,633 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,635 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,635 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,636 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,639 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,639 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,640 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,640 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,641 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,641 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,641 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,642 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,642 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,643 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:13:45,644 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,645 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,646 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,647 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,647 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,649 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,650 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,650 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,651 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,651 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,652 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,653 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,653 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,653 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,654 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,654 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,654 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,656 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,656 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,656 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,657 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,657 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,657 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,660 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,661 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,661 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,662 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,662 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,662 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,662 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,663 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:45,663 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+WARNING 2020-11-10 09:13:45,663 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,663 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,664 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,664 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,664 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,664 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,670 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:13:45,670 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,671 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,671 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:13:45,671 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,671 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,672 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,672 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,673 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,673 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,673 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,674 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,674 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,674 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,674 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:45,675 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:13:45,675 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:45,675 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,630 - POST -> Client has accessed Root1/http.py and the post info is - 
+Test data for POST
+INFO 2020-11-10 09:13:46,631 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,631 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,635 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:13:46,635 - PUT -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,636 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,643 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:13:46,644 - PUT -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,644 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,655 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:13:46,655 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,656 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,657 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:13:46,657 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,657 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,659 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:13:46,659 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,660 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,666 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,667 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,667 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,669 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,670 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,670 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,670 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,671 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,671 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,672 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,672 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,672 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,676 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,676 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,676 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,677 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,677 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,678 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,680 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,681 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,681 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,681 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,681 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,682 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,682 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,682 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,683 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,685 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,685 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,685 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,686 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,687 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,687 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,689 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:13:46,690 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,690 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:13:46,690 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:46,690 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,691 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:13:46,691 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,691 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:13:46,691 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+WARNING 2020-11-10 09:13:46,691 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,692 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,692 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,692 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,692 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,692 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,696 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:13:46,696 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,697 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,699 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:13:46,700 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,700 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,700 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,700 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,701 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,701 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:13:46,701 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,701 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,701 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,702 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,702 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:46,706 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:13:46,706 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:46,706 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:13:47,658 - PUT -> Client has written in Root1/http.py - 
+
+INFO 2020-11-10 09:13:47,659 - PUT -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:13:47,659 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:42,283 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:42,286 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:42,288 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,299 - GET -> Client has requested for not available file Root1/test.html
+INFO 2020-11-10 09:32:42,300 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,300 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,307 - GET -> Client has requested for not available file Root1/not_exists.html
+INFO 2020-11-10 09:32:42,307 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,307 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:42,318 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:42,323 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,336 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:32:42,336 - DELETE -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,336 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,341 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:32:42,341 - DELETE -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,342 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,355 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,356 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,356 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,374 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,374 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,374 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,375 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,376 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:42,377 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:32:42,378 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,379 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,379 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:42,379 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,379 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,379 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:32:42,380 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,380 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,380 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,382 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,382 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,383 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,384 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,385 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,385 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,386 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,386 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,387 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,387 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,387 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,387 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,388 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,389 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,389 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:42,389 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,389 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:42,389 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,390 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,390 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,390 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,395 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,395 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,395 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:42,395 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,395 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:42,395 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,396 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,397 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,397 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,398 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,398 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,399 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,399 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,399 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,400 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,402 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,403 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,404 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,404 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,405 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,405 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,405 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,405 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,405 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,406 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,406 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,406 - GET -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:42,407 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,407 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:42,407 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,408 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,408 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,408 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,413 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,414 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,414 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:42,414 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:42,414 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:42,414 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,374 - GET -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:32:44,374 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,374 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,379 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,379 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,380 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,389 - Forbidden file
+INFO 2020-11-10 09:32:44,389 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,389 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,400 - authentication
+INFO 2020-11-10 09:32:44,400 - GET -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,400 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,410 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,411 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,411 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,420 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,421 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,421 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,422 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,422 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,423 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,424 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,424 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,424 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,425 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,425 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,425 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,426 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,426 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,427 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,442 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,442 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,442 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,445 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,448 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,448 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,448 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,449 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,449 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,449 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,449 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,449 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,452 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,452 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,452 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,454 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,454 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,454 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,456 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,457 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,457 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,457 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,457 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,457 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,464 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,464 - HEAD -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:44,464 - HEAD -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:32:44,465 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,465 - HEAD -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:44,465 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,465 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,465 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,465 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,465 - HEAD -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:44,466 - HEAD -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:32:44,466 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,466 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,466 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:44,466 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,473 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,473 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,473 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,474 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,474 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,474 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,475 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,475 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,475 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,476 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,476 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,476 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,477 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,477 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,477 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,483 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,483 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,483 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:44,484 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:32:44,484 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:44,484 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,424 - HEAD -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:32:45,424 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,424 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,428 - authentication
+INFO 2020-11-10 09:32:45,428 - HEAD -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,428 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,435 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for Simple Post
+INFO 2020-11-10 09:32:45,435 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,435 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,447 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:32:45,453 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,453 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,453 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:32:45,453 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,453 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,459 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,460 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,461 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,462 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:45,462 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:45,462 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,463 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:45,463 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:45,463 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,463 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,464 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,464 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,466 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,466 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,466 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,470 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:32:45,470 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,470 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,471 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:32:45,471 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,471 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,472 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:32:45,472 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:32:45,473 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:45,473 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,473 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,473 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+WARNING 2020-11-10 09:32:45,474 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,474 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,474 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,477 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,477 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,477 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,478 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,479 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,479 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,480 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:32:45,480 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,480 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,481 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,482 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,482 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,482 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:45,482 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,483 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,483 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,483 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:45,483 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,484 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,484 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,484 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,487 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,487 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,487 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,489 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:32:45,489 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,490 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,490 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:32:45,490 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:45,490 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+WARNING 2020-11-10 09:32:45,490 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,491 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,491 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,491 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,491 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,491 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:45,496 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:32:45,496 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:45,497 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,446 - POST -> Client has accessed Root1/http.py and the post info is - 
+Test data for POST
+INFO 2020-11-10 09:32:46,446 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,446 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,451 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:32:46,451 - PUT -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,452 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,461 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:32:46,462 - PUT -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,462 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,469 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:32:46,470 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,470 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,471 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,471 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,472 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,472 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:32:46,473 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:46,473 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+WARNING 2020-11-10 09:32:46,473 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,473 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,474 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,474 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,474 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,474 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,475 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,475 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,475 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,478 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,479 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,479 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,484 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:32:46,484 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,485 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,486 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,486 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,486 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,487 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,487 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,487 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,488 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,489 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,489 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,490 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,490 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,490 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,494 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,495 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:46,495 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+WARNING 2020-11-10 09:32:46,496 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,496 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,497 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,497 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,497 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,497 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,498 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,498 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,498 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:46,499 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,499 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:32:46,499 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,500 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:32:46,500 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,500 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,504 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,505 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:46,505 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+WARNING 2020-11-10 09:32:46,505 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,505 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,506 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,506 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,507 - POST -> cookie sent: SessionId=64615
+INFO 2020-11-10 09:32:46,507 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+WARNING 2020-11-10 09:32:46,507 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,507 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,508 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,508 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:32:46,508 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,509 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,509 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:32:46,510 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,510 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:46,511 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:32:46,511 - POST -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:46,511 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:32:47,472 - PUT -> Client has written in Root1/http.py - 
+
+INFO 2020-11-10 09:32:47,472 - PUT -> cookie sent: SessionId=64615
+WARNING 2020-11-10 09:32:47,473 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-10 09:33:44,166 - STOPPED
+WARNING 2020-11-10 09:33:48,765 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:33:48,768 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:33:48,770 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:33:48,781 - GET -> Client has requested for not available file Root1/test.html
+INFO 2020-11-10 09:33:48,783 - GET -> cookie sent: SessionId=24329
+WARNING 2020-11-10 09:33:48,784 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:33:48,789 - GET -> Client has requested for not available file Root1/not_exists.html
+INFO 2020-11-10 09:33:48,789 - GET -> cookie sent: SessionId=24329
+WARNING 2020-11-10 09:33:48,789 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:33:48,801 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:33:48,804 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:33:48,812 - name 'for_file' is not defined
+DEBUG 2020-11-10 09:34:07,636 - STOPPED
+WARNING 2020-11-10 09:35:12,144 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:35:12,146 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:35:12,148 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,159 - GET -> Client has requested for not available file Root1/test.html
+INFO 2020-11-10 09:35:12,161 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,162 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,167 - GET -> Client has requested for not available file Root1/not_exists.html
+INFO 2020-11-10 09:35:12,167 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,167 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:35:12,179 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:35:12,182 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,191 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:35:12,191 - DELETE -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,191 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,195 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:35:12,195 - DELETE -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,195 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,207 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,207 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,207 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,215 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,216 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,216 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,217 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,219 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,220 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,229 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,230 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:12,230 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:35:12,231 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,231 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,232 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,232 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,233 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,233 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:12,233 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,233 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:35:12,233 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,238 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,238 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,239 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,242 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,243 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:12,243 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:35:12,243 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,244 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,244 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,245 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,245 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,245 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,249 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,250 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:12,250 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:35:12,250 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,251 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,251 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,251 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,252 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,252 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:12,252 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,252 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,252 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:35:12,253 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,253 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,253 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,259 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,260 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,260 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,260 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,261 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,261 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,262 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,263 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,263 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,263 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,263 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,264 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,264 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,264 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,264 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,265 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,265 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,265 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,266 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,266 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,266 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,270 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,270 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,271 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,271 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,271 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,271 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:12,271 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:12,272 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:12,272 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,222 - GET -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:35:14,222 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,222 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,226 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,226 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,226 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,236 - Forbidden file
+INFO 2020-11-10 09:35:14,236 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,236 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,243 - authentication
+INFO 2020-11-10 09:35:14,243 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,243 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,250 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,250 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,250 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,265 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,265 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,265 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,266 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,266 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,267 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,268 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,268 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,269 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,269 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,270 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,271 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,271 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,271 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,271 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,276 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,276 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,277 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,279 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,279 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,279 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,279 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,279 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,280 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,280 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,280 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,281 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,281 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,281 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,281 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,282 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,282 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,283 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,289 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,290 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,291 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,292 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,292 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,292 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,293 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,293 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,293 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,293 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,293 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,294 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,294 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,294 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,294 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,295 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,295 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,296 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,298 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,298 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,299 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,301 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,301 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,302 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,302 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,302 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,302 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,303 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,303 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,303 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,304 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,304 - HEAD -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:14,304 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,304 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,304 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:35:14,305 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,308 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,308 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,308 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:14,308 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:35:14,309 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:14,309 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,263 - HEAD -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:35:15,263 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,264 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,268 - authentication
+INFO 2020-11-10 09:35:15,268 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,268 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,277 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for Simple Post
+INFO 2020-11-10 09:35:15,277 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,277 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,294 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,294 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,294 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,300 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,300 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,301 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,304 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,305 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,305 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:15,306 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,306 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,306 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+WARNING 2020-11-10 09:35:15,306 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,307 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,307 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,307 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,307 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,308 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,311 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,312 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,312 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,316 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:35:15,316 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,317 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,317 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:35:15,318 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,319 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,319 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:35:15,319 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,319 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,323 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,325 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,325 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,326 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,326 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,326 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,327 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,327 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,327 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,328 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,329 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,329 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,329 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,329 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,329 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,330 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,330 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,330 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,336 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:35:15,337 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:35:15,337 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:35:15,337 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:15,337 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,337 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,337 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,338 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:35:15,338 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,339 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,339 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,339 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:15,339 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,339 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:35:15,339 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,345 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:35:15,345 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,346 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,346 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:35:15,346 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,346 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,347 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:35:15,347 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:35:15,347 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,347 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:15,347 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:15,347 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,289 - POST -> Client has accessed Root1/http.py and the post info is - 
+Test data for POST
+INFO 2020-11-10 09:35:16,289 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,289 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,294 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:35:16,296 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,296 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,305 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:35:16,305 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,305 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,312 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:35:16,313 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,314 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,315 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:35:16,316 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,317 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,326 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,327 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:35:16,327 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:16,328 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,328 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:35:16,329 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,329 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,330 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:16,330 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+WARNING 2020-11-10 09:35:16,330 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,330 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,330 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,331 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,331 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,331 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,337 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,337 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,337 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,338 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,338 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,339 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,342 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:35:16,342 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,342 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,342 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:35:16,343 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,343 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,347 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,348 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,348 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,348 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,348 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,349 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,349 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,349 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,349 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,350 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,350 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,350 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,351 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,351 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,351 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,356 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:35:16,357 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,358 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,358 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:35:16,358 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,358 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,359 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,359 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,359 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,360 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,360 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,360 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,360 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:35:16,361 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,361 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,361 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:35:16,362 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,362 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,367 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:35:16,367 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:35:16,367 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:35:16,367 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,368 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:35:16,368 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:16,368 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:35:16,368 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:16,368 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:35:17,317 - PUT -> Client has written in Root1/http.py - 
+
+INFO 2020-11-10 09:35:17,318 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:35:17,318 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:38:00,088 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:38:00,090 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:38:00,096 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,101 - GET -> Client has requested for not available file Root1/test.html
+INFO 2020-11-10 09:38:00,101 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,101 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,105 - GET -> Client has requested for not available file Root1/not_exists.html
+INFO 2020-11-10 09:38:00,105 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,106 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:38:00,121 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:38:00,122 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,133 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:38:00,133 - DELETE -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,133 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,139 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:38:00,139 - DELETE -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,139 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,148 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,148 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,148 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,169 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,169 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,170 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,171 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,172 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,172 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,173 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,173 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,174 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,174 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,175 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:38:00,176 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:38:00,176 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,177 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,177 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,178 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,178 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,178 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,184 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,184 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,184 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,188 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,188 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,189 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,189 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,189 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,189 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,191 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,191 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,191 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,193 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,194 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,195 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,195 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,195 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,196 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,197 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,197 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,198 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:38:00,198 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,198 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:38:00,198 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,199 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,199 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,199 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,208 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,209 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,209 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,210 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,211 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:38:00,211 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:38:00,211 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,212 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:38:00,212 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:38:00,212 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,213 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,213 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,213 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,213 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,214 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,221 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,222 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:38:00,222 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:38:00,223 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,223 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,225 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,226 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,226 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,226 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:00,229 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,229 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:00,229 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:38:00,229 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:00,230 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:38:00,230 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,169 - GET -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:38:02,169 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,169 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,173 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,174 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,174 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,178 - Forbidden file
+INFO 2020-11-10 09:38:02,178 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,179 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,182 - authentication
+INFO 2020-11-10 09:38:02,182 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,182 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,192 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,192 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,193 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,204 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,205 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,205 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,206 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,206 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,206 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,208 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,208 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,208 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,212 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,212 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,213 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,219 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,219 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,219 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,221 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,221 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,223 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,228 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,228 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,228 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,229 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,229 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,229 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,231 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,231 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,231 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,232 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,232 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,232 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,233 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,233 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,234 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,235 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,235 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,236 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,241 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,242 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,242 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,243 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,243 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,243 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,244 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,244 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,245 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,245 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,246 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,246 - HEAD -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:38:02,246 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,246 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:38:02,246 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,249 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,250 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,250 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,250 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,250 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,251 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,252 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,252 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,252 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,252 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,253 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,253 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,253 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,254 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,254 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,254 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,254 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,255 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,255 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,255 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,255 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:02,257 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:38:02,257 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:02,257 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,206 - HEAD -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:38:03,206 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,206 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,210 - authentication
+INFO 2020-11-10 09:38:03,210 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,210 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,217 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for Simple Post
+INFO 2020-11-10 09:38:03,217 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,217 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,230 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,231 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,231 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,232 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:38:03,233 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,233 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,233 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:38:03,234 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,234 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,235 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,235 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,236 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,237 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,237 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,237 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,243 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,244 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,244 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,244 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,245 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,245 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,246 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:38:03,246 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,246 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,247 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,247 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,247 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,251 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,251 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,251 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,252 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,252 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,253 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,253 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:38:03,254 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,254 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,254 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,254 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,255 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,256 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,256 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,256 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,256 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,257 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,257 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,257 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,258 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,258 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,263 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:38:03,264 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,264 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,265 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:38:03,265 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,265 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,265 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,266 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,266 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,266 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,267 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,267 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,268 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,268 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,268 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,271 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:38:03,272 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,272 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,272 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,272 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,273 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,273 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,273 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,273 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:03,274 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:38:03,274 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:03,274 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,229 - Forbidden file
+INFO 2020-11-10 09:38:04,229 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,229 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,233 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:38:04,233 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,233 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,241 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:38:04,242 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,242 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,252 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,252 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,252 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,253 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,253 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,253 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,254 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,254 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,254 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,255 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,255 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,255 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,256 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,257 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,257 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,266 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,267 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,267 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,268 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,269 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,269 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,269 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,269 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,269 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,270 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,270 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,270 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:38:04,271 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,271 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:38:04,271 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,271 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,272 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,272 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,278 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,278 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,278 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,279 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:38:04,280 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,280 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,281 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,281 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,281 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,282 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,282 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,283 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,283 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,283 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,283 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,284 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,284 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,284 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,288 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,288 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,289 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,289 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,290 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,290 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,291 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,291 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:38:04,291 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+WARNING 2020-11-10 09:38:04,291 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,292 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,292 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,292 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,293 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,293 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,293 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,294 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,294 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,298 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:38:04,298 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,298 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:04,298 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:38:04,298 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:04,299 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:38:05,254 - Forbidden file
+INFO 2020-11-10 09:38:05,254 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:38:05,254 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:40,965 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:40,967 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:40,974 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:40,990 - GET -> Client has requested for not available file Root1/test.html
+INFO 2020-11-10 09:42:40,990 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:40,990 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:40,996 - GET -> Client has requested for not available file Root1/not_exists.html
+INFO 2020-11-10 09:42:40,996 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:40,996 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:40,999 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:41,001 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,008 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:42:41,008 - DELETE -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,008 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,014 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:42:41,014 - DELETE -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,014 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,021 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,021 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,022 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,034 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,036 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:42:41,036 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:42:41,037 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,037 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,038 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,038 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,038 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,038 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,041 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,043 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:42:41,044 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:42:41,044 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,046 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,047 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,047 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,047 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,047 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,048 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,048 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,048 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,049 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,049 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,049 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,052 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,053 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,053 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,053 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,054 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,054 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,055 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,055 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,055 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,055 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,056 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,056 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:42:41,056 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,056 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:41,056 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,059 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,059 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,060 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,063 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,063 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,063 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,064 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,064 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,065 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,065 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,066 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,066 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,067 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,067 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,068 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:42:41,068 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,068 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:41,068 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,069 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,069 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,070 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:42:41,070 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,070 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:41,070 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,072 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,072 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,072 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,079 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,079 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,080 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,080 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,080 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:41,080 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,080 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:41,080 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:41,081 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,038 - GET -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:42:43,038 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,038 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,042 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,042 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,042 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,049 - Forbidden file
+INFO 2020-11-10 09:42:43,050 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,050 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,055 - authentication
+INFO 2020-11-10 09:42:43,055 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,055 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,065 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,065 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,065 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,077 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,077 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,079 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,081 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,081 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,081 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,090 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,090 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,090 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,092 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,092 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,093 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,093 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,094 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,094 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,094 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,095 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,095 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,098 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,098 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,099 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,100 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,100 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,100 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,100 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,100 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,101 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,101 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,101 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,102 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,102 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,102 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,102 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,103 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,103 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,103 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,109 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,109 - HEAD -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:42:43,109 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,110 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,110 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:43,110 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,111 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,111 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,111 - HEAD -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:42:43,111 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,111 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:43,111 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,112 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,112 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,112 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,116 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,116 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,116 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,118 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,119 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,119 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,120 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,120 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,120 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,121 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,121 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,121 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,122 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,122 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,122 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,123 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,123 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,123 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,125 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,125 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,125 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:43,128 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:42:43,128 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:43,128 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,076 - HEAD -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:42:44,076 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,076 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,081 - authentication
+INFO 2020-11-10 09:42:44,081 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,081 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,092 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for Simple Post
+INFO 2020-11-10 09:42:44,093 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,093 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,105 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,105 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,105 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,117 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,118 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,118 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,120 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,121 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,121 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,121 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,122 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,123 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,123 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,125 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:42:44,125 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+WARNING 2020-11-10 09:42:44,125 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,126 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,126 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,129 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,129 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,129 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,134 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,134 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,134 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,135 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,135 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,135 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,136 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,136 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,137 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,140 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,141 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,142 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,142 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,143 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,143 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,144 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,145 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,145 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,145 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,146 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,146 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,147 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,147 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,147 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,151 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,152 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,152 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,152 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,153 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,153 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,153 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,154 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,154 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,154 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,155 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,155 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,155 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,155 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,156 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,157 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,158 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,158 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,162 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,163 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,163 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,164 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,164 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,165 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,165 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:42:44,165 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,165 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:44,165 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:42:44,165 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:44,166 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,106 - Forbidden file
+INFO 2020-11-10 09:42:45,106 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,107 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,111 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:42:45,111 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,112 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,120 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:42:45,120 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,120 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,139 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:42:45,141 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,142 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,144 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:42:45,145 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,145 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,146 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,147 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,147 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,149 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,149 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:42:45,150 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:42:45,150 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:42:45,150 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+WARNING 2020-11-10 09:42:45,150 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:45,151 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,151 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,152 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,152 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,152 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,152 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,154 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,154 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,155 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,162 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:42:45,163 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,163 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,166 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:42:45,167 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,167 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,168 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,168 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,168 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,169 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,169 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,169 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:42:45,169 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:42:45,169 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,170 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:42:45,170 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,170 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,171 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,172 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,172 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,172 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,177 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:42:45,177 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,177 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,178 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,178 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,178 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,180 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:42:45,181 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,181 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,181 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:42:45,181 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,181 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,182 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,182 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,183 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,184 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:42:45,185 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,185 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,188 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:42:45,188 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,188 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,189 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,189 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,190 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,190 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,190 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,190 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:45,193 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:42:45,194 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:45,194 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:42:46,139 - Forbidden file
+INFO 2020-11-10 09:42:46,139 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:42:46,140 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:44:50,991 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:44:50,993 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:44:50,995 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,009 - GET -> Client has requested for not available file Root1/test.html
+INFO 2020-11-10 09:44:51,009 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,009 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,013 - GET -> Client has requested for not available file Root1/not_exists.html
+INFO 2020-11-10 09:44:51,013 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,014 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:44:51,023 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:44:51,026 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,033 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:44:51,034 - DELETE -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,034 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,043 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 09:44:51,043 - DELETE -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,043 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,047 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,047 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,048 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,066 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,067 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,068 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:44:51,068 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,068 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,068 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:44:51,068 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,068 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,069 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,070 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,070 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,071 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,071 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,071 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,071 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,076 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,076 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,077 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,077 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,077 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:44:51,078 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:44:51,078 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,078 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,078 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,078 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,079 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,079 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,081 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,081 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,081 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,083 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,084 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,084 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,085 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,085 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,086 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,087 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,087 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,088 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,088 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,088 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,089 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,090 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,090 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,090 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,093 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,094 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,094 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,095 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,096 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,097 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,097 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,097 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,097 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,098 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,098 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:44:51,098 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,099 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 09:44:51,099 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,099 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:44:51,099 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,099 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:44:51,100 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,101 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,101 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,101 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,105 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,105 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,105 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,106 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,106 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,106 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:51,106 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:51,107 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:51,107 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,065 - GET -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:44:53,065 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,065 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,071 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,072 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,072 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,080 - Forbidden file
+INFO 2020-11-10 09:44:53,080 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,081 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,095 - authentication
+INFO 2020-11-10 09:44:53,095 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,095 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,110 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,110 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,110 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,128 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,128 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,128 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,129 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,129 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,129 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,132 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,132 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,133 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,138 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,138 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,138 - HEAD -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:44:53,139 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,140 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:44:53,140 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,145 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,145 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,145 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,147 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,147 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,148 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,149 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,150 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,151 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,156 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,156 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,157 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,160 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,160 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,160 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,162 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,162 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,163 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,163 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,164 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,164 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,168 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,168 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,168 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,168 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,168 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,169 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,169 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,170 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,170 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,170 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,170 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,171 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,171 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,172 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,172 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,172 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,172 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,173 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,178 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,178 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,178 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,179 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,179 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,180 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,180 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,180 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,180 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,181 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,181 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,181 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,185 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,185 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,185 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,190 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,190 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,190 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:53,191 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 09:44:53,191 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:53,191 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,128 - HEAD -> Client has fetched Root1/index.html
+INFO 2020-11-10 09:44:54,128 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,128 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,131 - authentication
+INFO 2020-11-10 09:44:54,131 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,131 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,141 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for Simple Post
+INFO 2020-11-10 09:44:54,141 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,141 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,159 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:44:54,159 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:44:54,160 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:44:54,160 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,161 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,161 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+WARNING 2020-11-10 09:44:54,161 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,162 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:44:54,162 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+WARNING 2020-11-10 09:44:54,163 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,163 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,163 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,168 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,169 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,169 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,170 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:44:54,170 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,171 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,172 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:44:54,172 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,172 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,173 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:44:54,174 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,174 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,178 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,178 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,178 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,179 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,180 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,181 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,181 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,181 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,182 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,184 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,184 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,185 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:44:54,185 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,185 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:44:54,185 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,189 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,189 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,190 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,190 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,190 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,190 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,191 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,191 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,192 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,192 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,192 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,193 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,193 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,194 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,194 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,195 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:44:54,195 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,195 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,198 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 09:44:54,199 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,199 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,200 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,200 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,200 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,201 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,201 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,202 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,202 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,203 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,203 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,203 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,203 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,203 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:54,204 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 09:44:54,204 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:54,204 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,152 - Forbidden file
+INFO 2020-11-10 09:44:55,152 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,152 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,155 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:44:55,156 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,156 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,165 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 09:44:55,165 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,166 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,176 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,177 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,177 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,180 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:44:55,180 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:44:55,183 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:44:55,184 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 09:44:55,184 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+WARNING 2020-11-10 09:44:55,186 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 09:44:55,187 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,188 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,188 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,195 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,195 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,196 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,196 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,196 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,197 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,205 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:44:55,206 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,207 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,207 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:44:55,208 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,209 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,210 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:44:55,210 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,210 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,214 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:44:55,214 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,214 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,216 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,217 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,217 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,218 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,218 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,218 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,219 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,220 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,220 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,220 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,220 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,220 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,225 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,226 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,226 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,226 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:44:55,226 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,227 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,227 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,227 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,227 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,227 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,228 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,228 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,228 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,228 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,229 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,234 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 09:44:55,234 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,234 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,235 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,236 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,236 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,237 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,237 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,238 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,238 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,239 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,239 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,239 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,239 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,239 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:55,240 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 09:44:55,240 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:55,240 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 09:44:56,180 - Forbidden file
+INFO 2020-11-10 09:44:56,180 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 09:44:56,180 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 10:02:43,247 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 10:02:43,248 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 10:02:43,250 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,260 - GET -> Client has requested for not available file Root1/test.html
+INFO 2020-11-10 10:02:43,260 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,260 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,265 - GET -> Client has requested for not available file Root1/not_exists.html
+INFO 2020-11-10 10:02:43,265 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,265 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 10:02:43,271 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 10:02:43,276 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,279 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 10:02:43,279 - DELETE -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,279 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,282 - DELETE -> Client has requested to delete not available Root1/delete_test.txt
+INFO 2020-11-10 10:02:43,283 - DELETE -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,283 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,286 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,287 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,287 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,297 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,297 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,297 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,300 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,300 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,300 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,303 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,304 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,305 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,308 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,309 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,309 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,311 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,311 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,312 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,313 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,313 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,313 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,315 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,315 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,315 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,316 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,316 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,316 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,317 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,317 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,317 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,319 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,320 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,320 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,321 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,321 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,321 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,324 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,325 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,325 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 10:02:43,325 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,326 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,326 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 10:02:43,326 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,326 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,326 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,327 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,327 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,327 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,327 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,327 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,327 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,333 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,333 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,333 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,333 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,334 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 10:02:43,334 - GET -> Client has fetched Root1/default.html
+WARNING 2020-11-10 10:02:43,334 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,335 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,336 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,336 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,336 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,337 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,337 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,338 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,338 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,339 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,339 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,339 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,343 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,343 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,343 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:43,344 - GET -> cookie sent: SessionId=53633
+INFO 2020-11-10 10:02:43,344 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,344 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:43,344 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:43,344 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 10:02:43,344 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,303 - GET -> Client has fetched Root1/index.html
+INFO 2020-11-10 10:02:45,304 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,304 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,307 - GET -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,307 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,307 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,312 - Forbidden file
+INFO 2020-11-10 10:02:45,312 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,312 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,317 - authentication
+INFO 2020-11-10 10:02:45,318 - GET -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,318 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,324 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,325 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,325 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,334 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,335 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,335 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,336 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,336 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,337 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,337 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,338 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,339 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,340 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,340 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,341 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,344 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,344 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,345 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,348 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,348 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,348 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,354 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,354 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,354 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,355 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,355 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,355 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,358 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,358 - HEAD -> cookie sent: SessionId=53633
+INFO 2020-11-10 10:02:45,358 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,358 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,358 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 10:02:45,359 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,359 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,359 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,360 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,360 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,360 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,360 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,361 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,361 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,361 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,363 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,363 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,364 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,364 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,364 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,364 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,368 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,368 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,368 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,369 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,369 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,369 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,370 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,370 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,370 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,373 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,373 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,373 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,375 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,376 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,377 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,378 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,378 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,378 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,379 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,379 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,379 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,379 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,380 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,380 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,380 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,381 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,381 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:45,382 - HEAD -> Client has fetched Root1/default.html
+INFO 2020-11-10 10:02:45,382 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:45,382 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,335 - HEAD -> Client has fetched Root1/index.html
+INFO 2020-11-10 10:02:46,335 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,335 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,339 - authentication
+INFO 2020-11-10 10:02:46,339 - HEAD -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,339 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,344 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for Simple Post
+INFO 2020-11-10 10:02:46,344 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,345 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,351 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,353 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,354 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,357 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,358 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,359 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,360 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 10:02:46,360 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,361 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,363 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 10:02:46,363 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,363 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,364 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 10:02:46,364 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,364 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,366 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 10:02:46,366 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,367 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,367 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,368 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,368 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,369 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,370 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,370 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,372 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,373 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,373 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,374 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,374 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,375 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,375 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,375 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,375 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,376 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,377 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,377 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,377 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 10:02:46,377 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,378 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,378 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,378 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,378 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,381 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,381 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,381 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,383 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,384 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,384 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,385 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,386 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,386 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 10:02:46,387 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+WARNING 2020-11-10 10:02:46,387 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,387 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 10:02:46,388 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,388 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 10:02:46,388 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,388 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 10:02:46,388 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,389 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,389 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 10:02:46,389 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,389 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,391 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,391 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,392 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,394 - POST -> Client has accessed Root1/default.html and the post info is - 
+
+INFO 2020-11-10 10:02:46,395 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,395 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,395 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 10:02:46,395 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,395 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:46,396 - POST -> Client has accessed Root1/default.html and the post info is - 
+Test data for multiple post
+INFO 2020-11-10 10:02:46,396 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:46,396 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,354 - Forbidden file
+INFO 2020-11-10 10:02:47,354 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,354 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,358 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 10:02:47,358 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,358 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,364 - PUT -> Client has written in Root1/put_data.txt - 
+Test data for Simple PUT
+INFO 2020-11-10 10:02:47,365 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,365 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,373 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,373 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,373 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,375 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,376 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,376 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,378 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,378 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,379 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,380 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,381 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,381 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,382 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,382 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,382 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,383 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,383 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,384 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,384 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,384 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,385 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,386 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,386 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,387 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,388 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,388 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,389 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,389 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,389 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,389 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,392 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,392 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,393 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,393 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,394 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,394 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,394 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,395 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,395 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,396 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 10:02:47,396 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,397 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 10:02:47,397 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,397 - [Errno 9] Bad file descriptor
+WARNING 2020-11-10 10:02:47,397 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,398 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 10:02:47,398 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,398 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,400 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,401 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,401 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,402 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,403 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,403 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,404 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 10:02:47,404 - POST -> cookie sent: SessionId=53633
+INFO 2020-11-10 10:02:47,404 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+WARNING 2020-11-10 10:02:47,405 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,405 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,405 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,405 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,406 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,406 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,407 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,408 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,408 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,408 - POST -> Client has accessed Root1/data.txt and the post info is - 
+
+INFO 2020-11-10 10:02:47,408 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,408 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,411 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 10:02:47,411 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,411 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:47,411 - POST -> Client has accessed Root1/data.txt and the post info is - 
+Test data for multiple PUT
+INFO 2020-11-10 10:02:47,412 - POST -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:47,412 - [Errno 9] Bad file descriptor
+INFO 2020-11-10 10:02:48,379 - Forbidden file
+INFO 2020-11-10 10:02:48,380 - PUT -> cookie sent: SessionId=53633
+WARNING 2020-11-10 10:02:48,380 - [Errno 9] Bad file descriptor
+DEBUG 2020-11-10 10:03:09,265 - STOPPED
