@@ -1,205 +1,304 @@
-from socket import *
+import requests
 from threading import *
-import getopt
-import sys
-import math
-from time import sleep
 import unittest
+from time import sleep
+from socket import *
 
-port = 0
-getNum = 0
-postNum = 0
-putNum = 0
-deleteNum = 0
-headNum = 0
-getFile = ""
-putFile = ""
-deleteFile = ""
-postFile = ""
-headFile = ""
-#h - help
-#p - server port number
-#G - get requests to send
-#P - post
-#U - put
-#D - delete
-#H - head
-
-try:
-    opts, args = getopt.getopt(sys.argv[1:], "hp:G:P:U:D:H:", ["getFile=", "putFile=", "postFile=", "deleteFile=", "headFile="])
-except getopt.GetoptError as e:
-    print(e)
-    sys.exit(2)
-for o, a in opts:
-    if o == "-h":
-        print ("python tester.py Options\nOptions:\n-p [server port] \n-G [# of get requests] \n-P [# of post requests] \n-U [# of put requests] \n-D [# of delete requests] \n-H [# of head requests] \n--getFile [req file] \n--postFile [post data file] \n--deleteFile [file to delete] \n--headFile [req file] \n--putFile [file to put]")
-        sys.exit()
-    elif o == "-p":
-        port = int(a)
-    elif o == "-G":
-        getNum = int(a)
-    elif o == "-P":
-        postNum = int(a)
-    elif o == "-U":
-        putNum = int(a)
-    elif o == "-D":
-        deleteNum = int(a)
-    elif o == "-H":
-        headNum = int(a)
-    elif o == "--getFile":
-        getFile = a
-    elif o == "--putFile":
-        putFile = a
-    elif o == "--postFile":
-        postFile = a
-    elif o == "--deleteFile":
-        deleteFile = a
-    elif o == "--headFile":
-        headFile = a
-    else:
-        print("Enter correct arguments.")
-        sys.exit()
-        
-httpVersion = "HTTP/1.1"
-
-#c = number of requests to send per thread
-#threads = number of simultaneous threads to send n requests in a loop
-
-
+port = 12345
 def headerMaker(method, requestedFile):
-    request = method + " " + requestedFile + " " + httpVersion + "\r\n"
-    request += "Host: 127.0.0.1/" + str(port) + "\r\n"
-    request += "User-Agent: Tester v1.0" + "\r\n"
-    request += "Accept: image/webp,*/*" + "\r\n"
-    request += "Accept-Language: en-US,en;q=0.5" + "\r\n"
-    request += "Accept-Encoding: gzip, deflate" + "\r\n"
-    request += "Connection: keep-alive" + "\r\n"
-    request += "Referer: " + "\r\n"
-    request += "If-Modified-Since: " + "\r\n"
-    request += "Cache-Control: max-age=0" + "\r\n"
-    request += "\r\n"
-    return request
-
-def getRequestMaker(file, c):
-    for i in range (0, c): 
-        testerSocket = socket(AF_INET, SOCK_STREAM)
-        try:
-            testerSocket.connect(('', port))
-        except Exception as e:
-            print(e)
-            sys.exit()
-        request = headerMaker("GET", file)
-        testerSocket.send(request.encode())
-        sleep(0.1)
-        print(testerSocket.recv(4096).decode(), "\n")
-
-def postRequestMaker(file, c):
-    for i in range (0, c):
-        testerSocket = socket(AF_INET, SOCK_STREAM)
-        try:
-            testerSocket.connect(('', port))
-        except Exception as e:
-            print(e)
-            sys.exit()
-        request = headerMaker("POST", file)
-        request += "This is test Data for POST" 
-        testerSocket.send(request.encode())
-        sleep(0.5)
-        print(testerSocket.recv(4096).decode(), "\n")
-
-def putRequestMaker(file, c):
-    for i in range (0, c):
-        testerSocket = socket(AF_INET, SOCK_STREAM)
-        try:
-            testerSocket.connect(('', port))
-        except Exception as e:
-            print(e)
-            sys.exit()
-        request = headerMaker("PUT", file)
-        request += "This is test Data for PUT"
-        testerSocket.send(request.encode())
-        sleep(0.5)
-        print(testerSocket.recv(4096).decode(), "\n")
-
-def deleteRequestMaker(file, c):
-    for i in range (0, c):
-        testerSocket = socket(AF_INET, SOCK_STREAM)
-        try:
-            testerSocket.connect(('', port))
-        except Exception as e:
-            print(e)
-            sys.exit()    
-        request = headerMaker("DELETE", file)
-        testerSocket.send(request.encode())
-        sleep(0.5)
-        print(testerSocket.recv(4096).decode(), "\n")
-
-def headRequestMaker(file, c):
-    for i in range (0, c):
-        testerSocket = socket(AF_INET, SOCK_STREAM)
-        try:
-            testerSocket.connect(('', port))
-        except Exception as e:
-            print(e)
-            sys.exit()
-        request = headerMaker("HEAD", file)
-        testerSocket.send(request.encode())
-        sleep(0.5)
-        print(testerSocket.recv(4096).decode(), "\n")
-
-getThreads = math.ceil(0.2*getNum)
-try:
-    getc = math.ceil(getNum/getThreads)
-except ZeroDivisionError:
-    getc = 0
-postThreads = math.ceil(0.2*postNum)
-try:
-    postc = math.ceil(postNum/postThreads)
-except ZeroDivisionError:
-    postc = 0
-
-putThreads = math.ceil(0.2*putNum)
-try:
-    putc = math.ceil(putNum/putThreads)
-except ZeroDivisionError:
-    putc = 0
-
-deleteThreads = math.ceil(0.2*deleteNum)
-try:
-    deletec = math.ceil(deleteNum/deleteThreads)
-except ZeroDivisionError:
-    deletec = 0
-
-headThreads = math.ceil(0.2*headNum)
-try:
-    headc = math.ceil(headNum/headThreads)
-except ZeroDivisionError:
-    headc = 0
-
-totalThreads = getThreads + postThreads + putThreads + deleteThreads + headThreads
-for i in range(0, totalThreads):
-    while getThreads != 0:
-        Thread(target= getRequestMaker, args= (getFile, min(getNum, getc))).start()
-        getThreads -= 1
-        getNum -= min(getNum, getc)   
-    while postThreads != 0:
-        Thread(target= postRequestMaker, args= (postFile, min(postNum, postc))).start()
-        postThreads -= 1
-        postNum -= min(postNum, postc)
-    while putThreads != 0:
-        Thread(target= putRequestMaker, args= (putFile, min(putNum, putc))).start()
-        putThreads -= 1
-        putNum -= min(putNum, putc)
-    while deleteThreads != 0:
-        Thread(target= deleteRequestMaker, args= (deleteFile, min(deleteNum, deletec))).start()
-        deleteThreads -= 1
-        deleteNum -= min(deleteNum, deletec)
-    while headThreads != 0:
-        Thread(target= headRequestMaker, args= (headFile, min(headNum, headc))).start()
-        headThreads -= 1
-        headNum -= min(headNum, headc)
+	request = method + " " + requestedFile + " " + "HTTP/1.1" + "\r\n"
+	request += "Host: 127.0.0.1/" + str(port) + "\r\n"
+	request += "User-Agent: Tester v1.0" + "\r\n"
+	request += "Accept: image/webp,*/*" + "\r\n"
+	request += "Accept-Language: en-US,en;q=0.5" + "\r\n"
+	request += "Accept-Encoding: gzip, deflate" + "\r\n"
+	request += "Connection: keep-alive" + "\r\n"
+	request += "Authorization: Basic YWRtaW46YWRtaW4=" + "\r\n"
+	request += "\r\n"
+	return request
 
 
 
 
-    
+#response = requests.get('http://127.0.0.1:12345/index3.html')
+class GetRequestMaker(unittest.TestCase):
+	def __init__(self, *args, **kwargs):
+		super(GetRequestMaker, self).__init__(*args, **kwargs)
+		self.recvd = 0
+
+	def test_simple_get(self):
+		response = requests.get('http://127.0.0.1:12345/default.html')
+		try:
+			self.assertEqual(response.status_code, 200)
+			print("GET Simple-> PASS")
+		except Exception as e:	
+			print("GET Simple-> FAIL", e)
+
+	def test_simple_get_with_auth(self):
+		response = requests.get('http://127.0.0.1:12345/index.html', auth=requests.auth.HTTPBasicAuth('admin', 'admin'))
+		try:
+			self.assertEqual(response.status_code, 200)
+			print("GET with Valid Auth-> PASS")
+		except Exception as e:	
+			print("GET with Valid Auth-> FAIL", e)
+			
+	def test_simple_get_with_inauth(self):	
+		response = requests.get('http://127.0.0.1:12345/index.html', auth=requests.auth.HTTPBasicAuth('worng', 'wrong'))
+		try:
+			self.assertEqual(response.status_code, 401)
+			print("GET with InValid Auth-> PASS")
+		except Exception as e:	
+			print("GET with Valid Auth-> FAIL", e)
+
+	def test_simple_get_with_forbidden(self):
+		response = requests.get('http://127.0.0.1:12345/hello.html')
+		try:
+			self.assertEqual(response.status_code, 403)
+			print("GET with Forbidden-> PASS")
+		except Exception as e:	
+			print("GET with Forbidden-> FAIL", e)
+
+	def multiple_get(self, num):
+		for i in range (0, num):
+			response = requests.get('http://127.0.0.1:12345/default.html')
+			if response.status_code == 200:
+				self.recvd += 1
+	
+	def test_simple_get_with_25_requests(self):
+		for i in range(0, 5):
+			Thread(target=self.multiple_get, args=(5, )).start()
+		sleep(2)
+		try:
+			self.assertEqual(self.recvd, 25)
+			print("GET MultiClient-> PASS")
+		except Exception as e:	
+			print("GET MultiClient-> FAIL", e)
+		self.recvd = 0
+		
+	def test_not_found_get(self):
+		response = requests.get('http://127.0.0.1:12345/test.html')
+		try:
+			self.assertEqual(response.status_code, 404)
+			print("GET Not Found-> PASS")
+		except Exception as e:	
+			print("GET Not Found-> FAIL", e)
+
+	def test_get_bad_request(self):
+		testerSocket = socket(AF_INET, SOCK_STREAM)
+		testerSocket.connect(('', 12345))
+		msg = headerMaker("get", "index.html")
+		testerSocket.sendall(msg.encode())
+		response = testerSocket.recv(1024).decode()
+		testerSocket.close()
+		try:	
+			self.assertEqual(int(response[9:12]), 400)
+			print("GET Bad Request-> PASS")
+		except Exception as e:
+			print("GET Bad Request-> FAIL", e)
+
+	def test_simple_get_with_cookies(self):
+		response = requests.get('http://127.0.0.1:12345/default.html')
+		try:
+			self.assertTrue(response.headers["Set-Cookie"])
+			print("GET Cookies-> PASS")
+		except Exception as e:	
+			print("GET Cookies-> FAIL", e)
+
+	def test_simple_post(self):
+		response = requests.post('http://127.0.0.1:12345/default.html', data="Test data for Simple Post")
+		try:
+			self.assertEqual(response.status_code, 200)
+			print("POST simple-> PASS")
+		except Exception as e:	
+			print("POST simple-> FAIL", e)	
+
+	def test_post_bad_request(self):
+		testerSocket = socket(AF_INET, SOCK_STREAM)
+		testerSocket.connect(('', 12345))
+		msg = headerMaker("post", "index.html")
+		testerSocket.sendall(msg.encode())
+		response = testerSocket.recv(1024).decode()
+		testerSocket.close()
+		try:
+			#print(response)
+			self.assertEqual(int(response[9:12]), 400)
+			print("POST Bad Request-> PASS")
+		except Exception as e:
+			print("POST Bad Request-> FAIL", e)
+	
+	def multiple_post(self, num):
+		for i in range (0, num):
+			response = requests.post('http://127.0.0.1:12345/default.html', data="Test data for multiple post")
+			if response.status_code == 200:
+				self.recvd += 1
+	
+	def test_simple_post_with_25_requests(self):
+		for i in range(0, 5):
+			Thread(target=self.multiple_post, args=(5, )).start()
+		sleep(1)
+		try:
+			self.assertEqual(self.recvd, 25)
+			print("POST multiClient-> PASS")
+		except Exception as e:	
+			print("POST multiClient-> FAIL", e)
+		self.recvd = 0
+
+	def test_simple_put_non_existing(self):
+		response = requests.put('http://127.0.0.1:12345/1.txt', data="Test data for Simple PUT")
+		try:
+			self.assertEqual(response.status_code, 201)
+			print("PUT simple-> PASS")
+		except Exception as e:	
+			print("PUT simple-> FAIL", e)
+
+	def test_simple_post_with_forbidden(self):
+		response = requests.post('http://127.0.0.1:12345/hello.html', data="Test data for POST")
+		try:
+			self.assertEqual(response.status_code, 403)
+			print("PUT Forbidden-> PASS")
+		except Exception as e:	
+			print("PUT Forbidden-> FAIL", e)
+
+	def test_simple_put_existing(self):
+		response = requests.put('http://127.0.0.1:12345/put_data.txt', data="Test data for Simple PUT")
+		try:
+			self.assertEqual(response.status_code, 200)
+			print("PUT Existing-> PASS")
+		except Exception as e:	
+			print("PUT Existing-> PASSy", e)
+
+	def multiple_put(self, num):
+		for i in range (0, num):
+			response = requests.post('http://127.0.0.1:12345/put_data.txt', data="Test data for multiple PUT")
+			if response.status_code == 200:
+				self.recvd += 1
+
+	def test_simple_put_with_25_requests(self):
+		for i in range(0, 5):
+			Thread(target=self.multiple_put, args=(5, )).start()
+		sleep(1)
+		try:
+			self.assertEqual(self.recvd, 25)
+			print("PUT MultiClient-> PASS")
+		except Exception as e:	
+			print("PUT MultiClient-> FAIL", e)
+		self.recvd = 0
+
+	def test_put_bad_request(self):
+		testerSocket = socket(AF_INET, SOCK_STREAM)
+		testerSocket.connect(('', 12345))
+		msg = headerMaker("put", "test_put.txt")
+		testerSocket.sendall(msg.encode())
+		response = testerSocket.recv(1024).decode()
+		testerSocket.close()
+		try:
+			#print(response)
+			self.assertEqual(int(response[9:12]), 400)
+			print("PUT Bad Request-> PASS")
+		except Exception as e:
+			print("PUT Bad Request-> FAIL", e)
+
+	def test_simple_put_with_forbidden(self):
+		response = requests.put('http://127.0.0.1:12345/hello.html')
+		try:
+			self.assertEqual(response.status_code, 403)
+			print("PUT Forbidden-> PASS")
+		except Exception as e:	
+			print("PUT Forbidden-> PASS", e)
+
+	def test_simple_head(self):
+		response = requests.head('http://127.0.0.1:12345/default.html')
+		try:
+			self.assertEqual(response.status_code, 200)
+			print("HEAD Simple-> PASS")
+		except Exception as e:	
+			print("HEAD simple-> FAIL", e)
+
+	def test_simple_head_with_auth(self):
+		response = requests.head('http://127.0.0.1:12345/index.html', auth=requests.auth.HTTPBasicAuth('admin', 'admin'))
+		try:
+			self.assertEqual(response.status_code, 200)
+			print("HEAD ValidAuth-> PASS")
+		except Exception as e:	
+			print("HEAD ValidAuth-> FAIL", e)
+			
+	def test_simple_head_with_inauth(self):	
+		response = requests.head('http://127.0.0.1:12345/index.html', auth=requests.auth.HTTPBasicAuth('temp', 'temp'))
+		try:
+			self.assertEqual(response.status_code, 401)
+			print("HEAD InValidAuth-> PASS")
+		except Exception as e:	
+			print("HEAD InValidAuth-> FAIL", e)
+
+	def multiple_head(self, num):
+		for i in range (0, num):
+			response = requests.head('http://127.0.0.1:12345/default.html')
+			if response.status_code == 200:
+				self.recvd += 1
+	
+	def test_simple_head_with_25_requests(self):
+		for i in range(0, 5):
+			Thread(target=self.multiple_head, args=(5, )).start()
+		sleep(1)
+		try:
+			self.assertEqual(self.recvd, 25)
+			print("HEAD MultiClient-> PASS")
+		except Exception as e:	
+			print("HEAD MultiClient-> FAIL", e)
+		self.recvd = 0
+		
+	def test_not_found_head(self):
+		response = requests.get('http://127.0.0.1:12345/not_exists.html')
+		try:
+			self.assertEqual(response.status_code, 404)
+			print("HEAD NotFound-> PASS")
+		except Exception as e:	
+			print("HEAD NotFound-> FAIL", e)
+
+	def test_head_bad_request(self):
+		testerSocket = socket(AF_INET, SOCK_STREAM)
+		testerSocket.connect(('', 12345))
+		msg = headerMaker("head", "index.html")
+		testerSocket.sendall(msg.encode())
+		response = testerSocket.recv(1024).decode()
+		testerSocket.close()
+		try:	
+			self.assertEqual(int(response[9:12]), 400)
+			print("HEAD BadRequest-> PASS")
+		except Exception as e:
+			print("HEAD BadRequest-> FAIL", e)
+
+	def test_simple_delete_non_existing(self):
+		response = requests.delete('http://127.0.0.1:12345/delete_test.txt')
+		try:
+			self.assertEqual(response.status_code, 404)
+			print("DELETE NotFound-> PASS")
+		except Exception as e:	
+			print("DELETE NotFound-> FAIL", e)
+	
+	def test_simple_delete_existing(self):
+		response = requests.delete('http://127.0.0.1:12345/1.txt')
+		try:
+			self.assertEqual(response.status_code, 200)
+			print("DELETE Simple-> PASS")
+		except Exception as e:	
+			print("DELETE Simple-> FAIL", e)		
+
+	def test_delete_bad_request(self):
+		testerSocket = socket(AF_INET, SOCK_STREAM)
+		testerSocket.connect(('', 12345))
+		msg = headerMaker("delete", "test_put.txt")
+		testerSocket.sendall(msg.encode())
+		response = testerSocket.recv(1024).decode()
+		testerSocket.close()
+		try:
+			#print(response)
+			self.assertEqual(int(response[9:12]), 400)
+			print("DELETE BadRequest-> PASS")
+		except Exception as e:
+			print("DELETE BadRequest-> FAIL", e)
+	
+	
+if __name__ == '__main__':
+	print("The tester code is hardcoded and will only operate when server is on port 12345")
+	unittest.main()

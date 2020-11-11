@@ -12,16 +12,19 @@ import signal
 import base64
 
 class TCP_Server:
-    
+    if(len(sys.argv) == 2):
+        port = sys.argv[1]
+    else:
+        print("Usage: Python3 server.py <port>")
+        sys.exit()
     server_logger = logging.getLogger() 
     CLIENTS = []
-    def __init__(self, host = '127.0.0.1', port = 12345):
+    def __init__(self, host = '127.0.0.1', port = int(sys.argv[1])):
         #address for our server
         self.host = host
         #port for our server
         self.port = port
 
-    #def start(self):
         #create a socket
         self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -41,8 +44,7 @@ class TCP_Server:
                 sys.exit()
 
             self.CLIENTS.append(conn)
-            #self.server_logger.debug("connected by", addr)
-            print("connected by", addr)
+            self.server_logger.debug("Client = " + str(addr[0]) + "," + str(addr[1]))
             _thread.start_new_thread(self.CLIENT_THREAD, (conn,addr))
 
 
@@ -60,12 +62,11 @@ class TCP_Server:
                 if data_str:
                     #function to handle data response
                     headers, body = self.handle_request(data_str)
-                    #message = bytes(headers,'utf-8')
                     self.SEND(headers, body, conn)
                 else:
                     self.remove(conn)
             except Exception as e:
-                self.server_logger.warning(e)
+                #self.server_logger.warning(e)
                 break
             
     def SEND(self, message_headers, message_body, conn):
@@ -89,19 +90,16 @@ class TCP_Server:
 ################################################################################################################################# 
 class HTTP_Server(TCP_Server):
     random_number = random.randint(10000,99999)
-    #body_length = None
-    #current time
     gmttime = time.strftime("%a, %d %b %Y %X GMT", time.gmtime())
     headers = {
             'Date': gmttime,
-            'Server': 'Manas_Server',
+            'Server': 'My_HTTP_Server',
             'Content-length': '0',
             'Connection': 'Close',
             'Content-Type': 'text/html',
             'Last-Modified': gmttime,
             'Content-Encoding': "text",
             }
-    #status_code = httplib.responses
     status_code = {
             200: 'OK',
             404: 'NOT FOUND',
@@ -168,16 +166,14 @@ class HTTP_Server(TCP_Server):
             if(regex.search(url) != None):
                 #to separate data and uri
                 filename, info = url.split('?')
-                #print(info)
-                #l = info.split('&')
-                #print(l)
+                get_logger.info(info)
             else:
                 filename = url
         
         finalextension = 'text'
-        #name, extension = os.path.splitext(filename)
         encoding = (request.dict['Accept-Encoding']).split(", ")
         for i in range (len(encoding)):
+            #this is because file is in .gz
             if(encoding[i] == 'gzip'):
                 encoding[i] = 'gz'
             if(os.path.exists(filename + "." + encoding[i])):
@@ -198,9 +194,7 @@ class HTTP_Server(TCP_Server):
         configur.read('config.ini')
         auth_file = configur.get('Authorization','file_auth')
         for_file = configur.get('Authorization','file_for')
-        #print(auth_file)
-        #firstly check if request headers have if modified since headers then only compare
-        #if not use normal method
+
         flag = 0
         if 'Authorization' in request.dict.keys():
             code = request.dict['Authorization']
@@ -221,6 +215,8 @@ class HTTP_Server(TCP_Server):
             response_body = "<h1>Authentication required</h1>".encode()
             get_logger.info("authentication")
         else:
+            #firstly check if request headers have if modified since headers then only compare
+            #if not use normal method
             if 'If-Modified-Since' in request.dict.keys():
 
                 #if file is modified send a new resonse containing file body
@@ -303,9 +299,7 @@ class HTTP_Server(TCP_Server):
         configur.read('config.ini')
         auth_file = configur.get('Authorization','file_auth')
         for_file = configur.get('Authorization','file_for')
-        #print(auth_file)
-        #firstly check if request headers have if modified since headers then only compare
-        #if not use normal method
+
         flag = 0
         if 'Authorization' in request.dict.keys():
             code = request.dict['Authorization']
@@ -377,9 +371,7 @@ class HTTP_Server(TCP_Server):
         configur.read('config.ini')
         auth_file = configur.get('Authorization','file_auth')
         for_file = configur.get('Authorization','file_for')
-        #print(auth_file)
-        #firstly check if request headers have if modified since headers then only compare
-        #if not use normal method
+
         flag = 0
         if 'Authorization' in request.dict.keys():
             code = request.dict['Authorization']
@@ -450,9 +442,7 @@ class HTTP_Server(TCP_Server):
         configur.read('config.ini')
         auth_file = configur.get('Authorization','file_auth')
         for_file = configur.get('Authorization','file_for')
-        #print(auth_file)
-        #firstly check if request headers have if modified since headers then only compare
-        #if not use normal method
+
         flag = 0
         if 'Authorization' in request.dict.keys():
             code = request.dict['Authorization']
@@ -532,9 +522,7 @@ class HTTP_Server(TCP_Server):
         configur.read('config.ini')
         auth_file = configur.get('Authorization','file_auth')
         for_file = configur.get('Authorization','file_for')
-        #print(auth_file)
-        #firstly check if request headers have if modified since headers then only compare
-        #if not use normal method
+
         flag = 0
         if 'Authorization' in request.dict.keys():
             code = request.dict['Authorization']
@@ -646,8 +634,9 @@ class HTTP_Request():
         configur.read('config.ini')
         self.root = configur.get('My_Settings','RootDirectory')
         self.log_file_name = configur.get('My_Settings','LogFileName')
+
         #parse the data into lines
-        print(data)
+        #print(data)
         self.parse(data)
         #Log file
         LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
@@ -659,9 +648,8 @@ class HTTP_Request():
 #################################################################################################################################
     def parse(self, data):
         lines = data.split("\r\n")
-        #length_line = len(lines)
+
         #we only require first line
-        #request_line = lines[0]
         self.parse_request_line(lines)
     
 #################################################################################################################################
@@ -690,7 +678,6 @@ class HTTP_Request():
             for i in range (1, len(request_line)-2):
                 word = request_line[i].split(': ')
                 self.dict[word[0]] = word[1] 
-            #print(self.dict['If-Modified-Since'])
 
 #################################################################################################################################
     def handle_post_headers(self, request_line):
@@ -709,4 +696,3 @@ class HTTP_Request():
 #################################################################################################################################
 if __name__ == '__main__':
     server = HTTP_Server()
-    #server.start()
