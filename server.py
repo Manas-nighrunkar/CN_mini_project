@@ -36,15 +36,16 @@ class TCP_Server:
         self.s.listen(200)
         #self.server_logger.debug("Server Listening at" + str(self.s.getsockname()[0]) + str(self.s.getsockname()[1]))
         print("Server Listening at", self.s.getsockname())
+        print("\nPress Ctrl-C To stop the Server")
         while True:
             try:
                 conn, addr = self.s.accept()
             except:
-                self.server_logger.debug("STOPPED")
+                print("\nServer STOPPED")
                 sys.exit()
 
             self.CLIENTS.append(conn)
-            self.server_logger.debug("Client = " + str(addr[0]) + "," + str(addr[1]))
+            #self.server_logger.debug("Client = " + str(addr[0]) + "," + str(addr[1]))
             _thread.start_new_thread(self.CLIENT_THREAD, (conn,addr))
 
 
@@ -208,12 +209,12 @@ class HTTP_Server(TCP_Server):
         if (for_file.find(filename) != -1):
             response_line = self.response_line(403)
             response_body = "<h1>Forbidden File</h1>".encode()
-            get_logger.info("Forbidden file")
+            get_logger.info("GET /" + filename + '- 403')
 
         elif (auth_file.find(filename) != -1) and flag == 0:
             response_line = self.response_line(401)
             response_body = "<h1>Authentication required</h1>".encode()
-            get_logger.info("authentication")
+            get_logger.info("GET /" + filename + '- 401')
         else:
             #firstly check if request headers have if modified since headers then only compare
             #if not use normal method
@@ -222,7 +223,7 @@ class HTTP_Server(TCP_Server):
                 #if file is modified send a new resonse containing file body
                 if(modificationtime != request.dict['If-Modified-Since']):
                     if os.path.exists(filename):
-                        get_logger.info('GET -> Client has fetched ' + filename)
+                        get_logger.info('GET /' + filename + '- 200')
                         response_line = self.response_line(200)
                         
                         #open file in binary mode so it is in bytes
@@ -232,19 +233,19 @@ class HTTP_Server(TCP_Server):
                     # returns not found error if file is not present
                     else:
                         response_line = self.response_line(404)
-                        get_logger.info('GET -> Client has requested for not available file ' + filename ) 
+                        get_logger.info('GET /' + filename + "- 404") 
                         response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
                 
                 #if the file is not modified simply send 304
                 else:
-                    get_logger.info('GET -> Has Fetched not modified ' + filename)
+                    get_logger.info('GET /' + filename +"- 304")
                     response_line = self.response_line(304)
                     response_body = ''
 
             #if modified since headers is missing    
             else:
                 if os.path.exists(filename):
-                    get_logger.info('GET -> Client has fetched ' + filename)
+                    get_logger.info('GET /' + filename + "- 200")
                     response_line = self.response_line(200)
                     #open file in binary mode so it is in bytes
                     with open(filename,'rb') as f:
@@ -255,7 +256,7 @@ class HTTP_Server(TCP_Server):
                 else:
                     response_line = self.response_line(404)
                     response_headers = self.response_headers()
-                    get_logger.info('GET -> Client has requested for not available file ' + filename )
+                    get_logger.info('GET /' + filename + "- 404")
                     response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
             
         #to get the content type
@@ -268,8 +269,7 @@ class HTTP_Server(TCP_Server):
                         }
         if 'Cookie' not in request.dict.keys():
             cookie_value = str(self.random_number)
-            cookie = 'SessionId' + '=' + cookie_value
-            get_logger.info("GET -> cookie sent: " + cookie)  
+            cookie = 'SessionId' + '=' + cookie_value 
             extra_headers['Set-Cookie'] = cookie
         else:
             pass
@@ -288,8 +288,6 @@ class HTTP_Server(TCP_Server):
 
 #################################################################################################################################
     def handle_POST(self, request):
-        #print(request.dict)
-        post_logger = logging.getLogger()
         if(request.uri == request.root):
             filename = "default.html"
         else:
@@ -299,6 +297,7 @@ class HTTP_Server(TCP_Server):
         configur.read('config.ini')
         auth_file = configur.get('Authorization','file_auth')
         for_file = configur.get('Authorization','file_for')
+        post_logger = logging.getLogger()
 
         flag = 0
         if 'Authorization' in request.dict.keys():
@@ -313,16 +312,16 @@ class HTTP_Server(TCP_Server):
         if (for_file.find(filename) != -1):
             response_line = self.response_line(403)
             response_body = "<h1>Forbidden File</h1>".encode()
-            post_logger.info("Forbidden file")
+            post_logger.info("POST /" + filename + "- 403")
 
         elif (auth_file.find(filename) != -1) and flag == 0:
             response_line = self.response_line(401)
             response_body = "<h1>Authentication required</h1>".encode()
-            post_logger.info("authentication")
+            post_logger.info("POST /" + filename + "- 401")
         else:
             #if requested file is present log the infor and send the file body
             if os.path.exists(filename):
-                post_logger.info('POST -> Client has accessed ' + filename + ' and the post info is - ' + '\n' + request.info)
+                post_logger.info("POST /" + filename + "- 200" + ' and the post info is - ' + '\n' + request.info)
                 response_line = self.response_line(200)     
                 
                 with open(filename,'rb') as f:
@@ -385,18 +384,18 @@ class HTTP_Server(TCP_Server):
         if (for_file.find(filename) != -1):
             response_line = self.response_line(403)
             response_body = "<h1>Forbidden File</h1>".encode()
-            put_logger.info("Forbidden file")
+            put_logger.info("PUT /" +filename + "- 403")
 
         elif (auth_file.find(filename) != -1) and flag == 0:
             response_line = self.response_line(401)
             response_body = "<h1>Authentication required</h1>".encode()
-            put_logger.info("authentication")
+            put_logger.info("PUT /" +filename + "- 401")
         else:
             if os.path.exists(filename):
-                put_logger.info('PUT -> Client has written in ' + filename + ' - ' + '\n' + request.info)
+                put_logger.info("PUT /" +filename + "- 200" + filename + ' - ' + '\n' + request.info)
                 response_line = self.response_line(200)
             else:
-                put_logger.info('PUT -> Client has created and written in ' + filename + ' - ' + '\n' + request.info)
+                put_logger.info("PUT /" +filename + "- 201" + filename + ' - ' + '\n' + request.info)
                 response_line = self.response_line(201)
 
             with open(filename,"w") as f:
@@ -456,25 +455,27 @@ class HTTP_Server(TCP_Server):
         if (for_file.find(filename) != -1):
             response_line = self.response_line(403)
             response_body = "<h1>Forbidden File</h1>".encode()
-            delete_logger.info("Forbidden file")
+            delete_logger.info("DELETE /" +filename + "- 403")
 
         elif (auth_file.find(filename) != -1) and flag == 0:
             response_line = self.response_line(401)
             response_body = "<h1>Authentication required</h1>".encode()
-            delete_logger.info("authentication")
+            delete_logger.info("DELETE /" +filename + "- 401")
         else:
             if os.path.exists(filename):
-                delete_logger.info('DELETE -> Client has deleted ' + filename)
+                delete_logger.info("DELETE /" +filename + "- 200")
                 response_line = self.response_line(200)
                 try:            
                     os.remove(filename)
                     response_body = "<h1> SUCCESS </h1>".encode()
                 except:
+                    delete_logger.info("DELETE /" +filename + "- 201")
+                    response_line = self.response_line(201)
                     response_body = "<h1> Permission Error </h1>".encode()
             else:
                 response_line = self.response_line(404)
                 response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode() 
-                delete_logger.info('DELETE -> Client has requested to delete not available ' + filename)
+                delete_logger.info("DELETE /" +filename + "- 404")
 
         content_type = mimetypes.guess_type(filename)[0] or 'text/html'
         body_length = len(response_body)
@@ -536,33 +537,33 @@ class HTTP_Server(TCP_Server):
         if (for_file.find(filename) != -1):
             response_line = self.response_line(403)
             response_body = "<h1>Forbidden File</h1>".encode()
-            head_logger.info("Forbidden file")
+            head_logger.info("HEAD /" +filename + "- 403")
 
         elif (auth_file.find(filename) != -1) and flag == 0:
             response_line = self.response_line(401)
             response_body = "<h1>Authentication required</h1>".encode()
-            head_logger.info("authentication")
+            head_logger.info("HEAD /" +filename + "- 401")
         else:
             if 'If-Modified-Since' in request.dict.keys():
                 if(modificationtime != request.dict['If-Modified-Since']):
                     if os.path.exists(filename):
-                        head_logger.info('HEAD -> Client has fetched ' + filename)
+                        head_logger.info("HEAD /" +filename + "- 200")
                         response_line = self.response_line(200)
                     
                     # returns not found error if file is not present
                     else:
                         response_line = self.response_line(404)
-                        head_logger.warning('HEAD -> Client has requested for not available file ' + filename ) 
+                        head_logger.warning("HEAD /" +filename + "- 404" ) 
                         response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
     
                 else:
-                    head_logger.info('HEAD -> Has Fetched not modified ' + filename)
+                    head_logger.info("HEAD /" +filename + "- 304")
                     response_line = self.response_line(304)
                     response_body = ''
                 
             else:
                 if os.path.exists(filename):
-                    head_logger.info('HEAD -> Client has fetched ' + filename)
+                    head_logger.info("HEAD /" +filename + "- 200")
                     response_line = self.response_line(200)
                     
 
@@ -570,7 +571,7 @@ class HTTP_Server(TCP_Server):
                 else:
                     response_line = self.response_line(404)
                     response_headers = self.response_headers()
-                    head_logger.info('HEAD -> Client has requested for not available file ' + filename )
+                    head_logger.info("HEAD /" +filename + "- 404" )
                     response_body = "<h1> ERROR 404 NOT FOUND </h1>".encode()
 
         #to get the content type
@@ -634,15 +635,12 @@ class HTTP_Request():
         configur.read('config.ini')
         self.root = configur.get('My_Settings','RootDirectory')
         self.log_file_name = configur.get('My_Settings','LogFileName')
-
+        logging.basicConfig(filename = self.log_file_name,
+                            level = logging.DEBUG,
+                            format = '127.0.0.1 - - [%(asctime)s] %(message)s', datefmt='%d/%b/%Y:%H:%M:%S %z')
         #parse the data into lines
         #print(data)
         self.parse(data)
-        #Log file
-        LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
-        logging.basicConfig(filename = self.log_file_name,
-                            level = logging.DEBUG,
-                            format = LOG_FORMAT)
         
 
 #################################################################################################################################

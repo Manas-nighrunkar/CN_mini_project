@@ -1,10 +1,10 @@
-import requests
 from threading import *
 import unittest
 from time import sleep
 from socket import *
+import requests
 
-port = 12345
+port = 8888
 def headerMaker(method, requestedFile):
 	request = method + " " + requestedFile + " " + "HTTP/1.1" + "\r\n"
 	request += "Host: 127.0.0.1/" + str(port) + "\r\n"
@@ -20,14 +20,14 @@ def headerMaker(method, requestedFile):
 
 
 
-#response = requests.get('http://127.0.0.1:12345/index3.html')
+#response = requests.get('http://127.0.0.1:8888/index3.html')
 class GetRequestMaker(unittest.TestCase):
 	def __init__(self, *args, **kwargs):
 		super(GetRequestMaker, self).__init__(*args, **kwargs)
 		self.recvd = 0
 
 	def test_simple_get(self):
-		response = requests.get('http://127.0.0.1:12345/default.html')
+		response = requests.get('http://127.0.0.1:8888/default.html')
 		try:
 			self.assertEqual(response.status_code, 200)
 			print("GET Simple-> PASS")
@@ -35,7 +35,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("GET Simple-> FAIL", e)
 
 	def test_simple_get_with_auth(self):
-		response = requests.get('http://127.0.0.1:12345/index.html', auth=requests.auth.HTTPBasicAuth('admin', 'admin'))
+		response = requests.get('http://127.0.0.1:8888/index.html', auth=requests.auth.HTTPBasicAuth('admin', 'admin'))
 		try:
 			self.assertEqual(response.status_code, 200)
 			print("GET with Valid Auth-> PASS")
@@ -43,7 +43,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("GET with Valid Auth-> FAIL", e)
 			
 	def test_simple_get_with_inauth(self):	
-		response = requests.get('http://127.0.0.1:12345/index.html', auth=requests.auth.HTTPBasicAuth('worng', 'wrong'))
+		response = requests.get('http://127.0.0.1:8888/index.html', auth=requests.auth.HTTPBasicAuth('worng', 'wrong'))
 		try:
 			self.assertEqual(response.status_code, 401)
 			print("GET with InValid Auth-> PASS")
@@ -51,7 +51,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("GET with Valid Auth-> FAIL", e)
 
 	def test_simple_get_with_forbidden(self):
-		response = requests.get('http://127.0.0.1:12345/hello.html')
+		response = requests.get('http://127.0.0.1:8888/hello.html')
 		try:
 			self.assertEqual(response.status_code, 403)
 			print("GET with Forbidden-> PASS")
@@ -60,7 +60,7 @@ class GetRequestMaker(unittest.TestCase):
 
 	def multiple_get(self, num):
 		for i in range (0, num):
-			response = requests.get('http://127.0.0.1:12345/default.html')
+			response = requests.get('http://127.0.0.1:8888/default.html')
 			if response.status_code == 200:
 				self.recvd += 1
 	
@@ -76,7 +76,7 @@ class GetRequestMaker(unittest.TestCase):
 		self.recvd = 0
 		
 	def test_not_found_get(self):
-		response = requests.get('http://127.0.0.1:12345/test.html')
+		response = requests.get('http://127.0.0.1:8888/test.html')
 		try:
 			self.assertEqual(response.status_code, 404)
 			print("GET Not Found-> PASS")
@@ -85,7 +85,7 @@ class GetRequestMaker(unittest.TestCase):
 
 	def test_get_bad_request(self):
 		testerSocket = socket(AF_INET, SOCK_STREAM)
-		testerSocket.connect(('', 12345))
+		testerSocket.connect(('', 8888))
 		msg = headerMaker("get", "index.html")
 		testerSocket.sendall(msg.encode())
 		response = testerSocket.recv(1024).decode()
@@ -97,7 +97,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("GET Bad Request-> FAIL", e)
 
 	def test_simple_get_with_cookies(self):
-		response = requests.get('http://127.0.0.1:12345/default.html')
+		response = requests.get('http://127.0.0.1:8888/default.html')
 		try:
 			self.assertTrue(response.headers["Set-Cookie"])
 			print("GET Cookies-> PASS")
@@ -105,7 +105,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("GET Cookies-> FAIL", e)
 
 	def test_simple_post(self):
-		response = requests.post('http://127.0.0.1:12345/default.html', data="Test data for Simple Post")
+		response = requests.post('http://127.0.0.1:8888/default.html', data="Test data for Simple Post")
 		try:
 			self.assertEqual(response.status_code, 200)
 			print("POST simple-> PASS")
@@ -114,7 +114,7 @@ class GetRequestMaker(unittest.TestCase):
 
 	def test_post_bad_request(self):
 		testerSocket = socket(AF_INET, SOCK_STREAM)
-		testerSocket.connect(('', 12345))
+		testerSocket.connect(('', 8888))
 		msg = headerMaker("post", "index.html")
 		testerSocket.sendall(msg.encode())
 		response = testerSocket.recv(1024).decode()
@@ -128,7 +128,7 @@ class GetRequestMaker(unittest.TestCase):
 	
 	def multiple_post(self, num):
 		for i in range (0, num):
-			response = requests.post('http://127.0.0.1:12345/default.html', data="Test data for multiple post")
+			response = requests.post('http://127.0.0.1:8888/default.html', data="Test data for multiple post")
 			if response.status_code == 200:
 				self.recvd += 1
 	
@@ -144,7 +144,7 @@ class GetRequestMaker(unittest.TestCase):
 		self.recvd = 0
 
 	def test_simple_put_non_existing(self):
-		response = requests.put('http://127.0.0.1:12345/1.txt', data="Test data for Simple PUT")
+		response = requests.put('http://127.0.0.1:8888/1.txt', data="Test data for Simple PUT")
 		try:
 			self.assertEqual(response.status_code, 201)
 			print("PUT simple-> PASS")
@@ -152,7 +152,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("PUT simple-> FAIL", e)
 
 	def test_simple_post_with_forbidden(self):
-		response = requests.post('http://127.0.0.1:12345/hello.html', data="Test data for POST")
+		response = requests.post('http://127.0.0.1:8888/hello.html', data="Test data for POST")
 		try:
 			self.assertEqual(response.status_code, 403)
 			print("PUT Forbidden-> PASS")
@@ -160,7 +160,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("PUT Forbidden-> FAIL", e)
 
 	def test_simple_put_existing(self):
-		response = requests.put('http://127.0.0.1:12345/put_data.txt', data="Test data for Simple PUT")
+		response = requests.put('http://127.0.0.1:8888/put_data.txt', data="Test data for Simple PUT")
 		try:
 			self.assertEqual(response.status_code, 200)
 			print("PUT Existing-> PASS")
@@ -169,7 +169,7 @@ class GetRequestMaker(unittest.TestCase):
 
 	def multiple_put(self, num):
 		for i in range (0, num):
-			response = requests.post('http://127.0.0.1:12345/put_data.txt', data="Test data for multiple PUT")
+			response = requests.post('http://127.0.0.1:8888/put_data.txt', data="Test data for multiple PUT")
 			if response.status_code == 200:
 				self.recvd += 1
 
@@ -186,7 +186,7 @@ class GetRequestMaker(unittest.TestCase):
 
 	def test_put_bad_request(self):
 		testerSocket = socket(AF_INET, SOCK_STREAM)
-		testerSocket.connect(('', 12345))
+		testerSocket.connect(('', 8888))
 		msg = headerMaker("put", "test_put.txt")
 		testerSocket.sendall(msg.encode())
 		response = testerSocket.recv(1024).decode()
@@ -199,7 +199,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("PUT Bad Request-> FAIL", e)
 
 	def test_simple_put_with_forbidden(self):
-		response = requests.put('http://127.0.0.1:12345/hello.html')
+		response = requests.put('http://127.0.0.1:8888/hello.html')
 		try:
 			self.assertEqual(response.status_code, 403)
 			print("PUT Forbidden-> PASS")
@@ -207,7 +207,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("PUT Forbidden-> PASS", e)
 
 	def test_simple_head(self):
-		response = requests.head('http://127.0.0.1:12345/default.html')
+		response = requests.head('http://127.0.0.1:8888/default.html')
 		try:
 			self.assertEqual(response.status_code, 200)
 			print("HEAD Simple-> PASS")
@@ -215,7 +215,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("HEAD simple-> FAIL", e)
 
 	def test_simple_head_with_auth(self):
-		response = requests.head('http://127.0.0.1:12345/index.html', auth=requests.auth.HTTPBasicAuth('admin', 'admin'))
+		response = requests.head('http://127.0.0.1:8888/index.html', auth=requests.auth.HTTPBasicAuth('admin', 'admin'))
 		try:
 			self.assertEqual(response.status_code, 200)
 			print("HEAD ValidAuth-> PASS")
@@ -223,7 +223,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("HEAD ValidAuth-> FAIL", e)
 			
 	def test_simple_head_with_inauth(self):	
-		response = requests.head('http://127.0.0.1:12345/index.html', auth=requests.auth.HTTPBasicAuth('temp', 'temp'))
+		response = requests.head('http://127.0.0.1:8888/index.html', auth=requests.auth.HTTPBasicAuth('temp', 'temp'))
 		try:
 			self.assertEqual(response.status_code, 401)
 			print("HEAD InValidAuth-> PASS")
@@ -232,7 +232,7 @@ class GetRequestMaker(unittest.TestCase):
 
 	def multiple_head(self, num):
 		for i in range (0, num):
-			response = requests.head('http://127.0.0.1:12345/default.html')
+			response = requests.head('http://127.0.0.1:8888/default.html')
 			if response.status_code == 200:
 				self.recvd += 1
 	
@@ -248,7 +248,7 @@ class GetRequestMaker(unittest.TestCase):
 		self.recvd = 0
 		
 	def test_not_found_head(self):
-		response = requests.get('http://127.0.0.1:12345/not_exists.html')
+		response = requests.get('http://127.0.0.1:8888/not_exists.html')
 		try:
 			self.assertEqual(response.status_code, 404)
 			print("HEAD NotFound-> PASS")
@@ -257,7 +257,7 @@ class GetRequestMaker(unittest.TestCase):
 
 	def test_head_bad_request(self):
 		testerSocket = socket(AF_INET, SOCK_STREAM)
-		testerSocket.connect(('', 12345))
+		testerSocket.connect(('', 8888))
 		msg = headerMaker("head", "index.html")
 		testerSocket.sendall(msg.encode())
 		response = testerSocket.recv(1024).decode()
@@ -269,7 +269,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("HEAD BadRequest-> FAIL", e)
 
 	def test_simple_delete_non_existing(self):
-		response = requests.delete('http://127.0.0.1:12345/delete_test.txt')
+		response = requests.delete('http://127.0.0.1:8888/delete_test.txt')
 		try:
 			self.assertEqual(response.status_code, 404)
 			print("DELETE NotFound-> PASS")
@@ -277,7 +277,7 @@ class GetRequestMaker(unittest.TestCase):
 			print("DELETE NotFound-> FAIL", e)
 	
 	def test_simple_delete_existing(self):
-		response = requests.delete('http://127.0.0.1:12345/1.txt')
+		response = requests.delete('http://127.0.0.1:8888/1.txt')
 		try:
 			self.assertEqual(response.status_code, 200)
 			print("DELETE Simple-> PASS")
@@ -286,7 +286,7 @@ class GetRequestMaker(unittest.TestCase):
 
 	def test_delete_bad_request(self):
 		testerSocket = socket(AF_INET, SOCK_STREAM)
-		testerSocket.connect(('', 12345))
+		testerSocket.connect(('', 8888))
 		msg = headerMaker("delete", "test_put.txt")
 		testerSocket.sendall(msg.encode())
 		response = testerSocket.recv(1024).decode()
@@ -300,5 +300,5 @@ class GetRequestMaker(unittest.TestCase):
 	
 	
 if __name__ == '__main__':
-	print("The tester code is hardcoded and will only operate when server is on port 12345")
+	print("The tester code is hardcoded and will only operate when server is on port 8888 and Root Folder = TesterFolder")
 	unittest.main()
