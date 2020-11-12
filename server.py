@@ -321,8 +321,10 @@ class HTTP_Server(TCP_Server):
         else:
             #if requested file is present log the infor and send the file body
             if os.path.exists(filename):
-                post_logger.info("POST /" + filename + "- 200" + ' and the post info is - ' + '\n' + request.info)
-                response_line = self.response_line(200)     
+                post_logger.info("POST /" + filename + "- 200")
+                response_line = self.response_line(200)
+                with open("post_info.log", "a") as f:
+                    f.write(time.strftime("%a, %d %b %Y %X GMT", time.gmtime()) + "--" + str(request.info.split("&")) + "\n")
                 
                 with open(filename,'rb') as f:
                     response_body = f.read()
